@@ -3,34 +3,38 @@
 
 <head>
     <title>Mr. Khuyen - Curriculum Vitae</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="initial-scale=1">
-    <meta name="keywords" content="Nguyễn Hữu Khuyên" />
-    <meta name="description" content="Nguyễn Hữu Khuyên" />
-    <meta name="abstract" content="Nguyễn Hữu Khuyên" />
-    <meta http-equiv="content-language" content="vi" />
+    <meta name="keywords" content="Nguyen Huu Khuyen" />
+    <meta name="description" content="Nguyen Huu Khuyen" />
+    <meta name="abstract" content="Nguyen Huu Khuyen" />
+    <meta http-equiv="content-language" content="en" />
 
     <link rel="icon" href="logo.ico" type="image/x-icon" />
     <link rel="stylesheet" href="calendar/clndr.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='fonts/sans.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/misc.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/share/plugin.css">
     <link rel="stylesheet" href="css/hover-min.css">
 </head>
 
 <body>
-    <div class="responsive-navigation visible-sm visible-xs">
+    <div class="responsive-navigation visible-sm visible-xs center">
         <a href="#" class="menu-toggle-btn">
             <i class="fa fa-bars fa-2x"></i>
         </a>
+        <h5><a href="https://huukhuyen.github.io/">Việt Nam</a> / <a href="#">English</a></h5>
         <div class="navigation responsive-menu">
             <ul>
-                <li class="home"><a href="#huukhuyen"><i class="fa fa-home fa-2x"></i></a></li>
-                <li class="about"><a href="#about">About</a></li>
-                <li class="services"><a href="#services">Skill</a></li>
+                <li class="home">
+                  <a href="#huukhuyen"><i class="fa fa-home fa-2x"></i></a>
+                </li>
+                <li class="about"><a href="#about">Introduction</a></li>
+                <li class="services"><a href="#services">Skills</a></li>
                 <li class="portfolio"><a href="#portfolio">Project</a></li>
                 <li class="contact"><a href="#contact">Contact</a></li>
             </ul>
@@ -41,11 +45,11 @@
             <a href="#"><img src="images/logo.png" alt=""></a>
             <p>Web Frontend Developer</p>
         </div>
-        <p class="language"><a href="">Việt Nam</a> / <a style="color:#FFF;" href="">English</a></p>
+        <p class="language"><a href="https://huukhuyen.github.io/">Việt Nam</a> / <a style="color:#FFF;" href="#">English</a></p>
         <div class="navigation">
             <ul class="main-menu">
                 <li class="home"><a href="#huukhuyen"><i class="fa fa-home fa-2x"></i></a></li>
-                <li class="about"><a href="#about">About</a></li>
+                <li class="about"><a href="#about">Introduction</a></li>
                 <li class="services"><a href="#services">Skill</a></li>
                 <li class="portfolio"><a href="#portfolio">Project</a></li>
                 <li class="contact"><a href="#contact">Contact</a></li>
@@ -55,7 +59,7 @@
     <div id="main-content">
         <div id="huukhuyen">
             <div class="main-slider">
-                <div class="flexslider">
+                <div class="flexslider hidden-xs">
                     <ul class="slides">
                         <li>
                             <div class="slider-caption">
@@ -83,12 +87,15 @@
                         </li>
                     </ul>
                 </div>
+                <div class="info-mobile visible-xs">
+                  <a href="#"><h1>Nguyen Huu Khuyen</h1></a>
+                </div>
             </div>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="welcome-text wow bounceInLeft">
-                            <h2><a href="#about">Learn about me</a></h2>
+                            <h2><a href="#about"><i class="fa fa-angle-double-down"></i></a></h2>
                         </div>
                     </div>
                 </div>
@@ -100,28 +107,31 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title">
-                            <h2>About</h2>
+                            <h2>Introduction</h2>
                         </div>
                     </div>
                 </div>
                 <div class="row our-story">
-                    <div class="col-md-8 wow fadeInLeft" data-wow-delay="0.6s">
+                    <div class="col-md-8 col-sm-8 wow fadeInLeft" data-wow-delay="0.2s">
                         <h3>A few words about myself</h3>
-                        <p>Hi all!</p>
+                        <p>Hello!</p>
                         <p>My name is Nguyen Huu Khuyen, 21 years old this year. Currently I have graduated in Information Technology.</p>
-                        <p>For me the information technology sector is not only popular but also a passion. Right from the time know about computers, the keywords such as "Coder, encryption, security, website ..." has made me see the impressive and come to it. Particularly in the development and application Website.</p>
-                        <p>During the learning process, I have realized that I need to equip the necessary knowledge through specialized I am studying through exercises and projects. In addition to learning in school I also took advantage of their accumulated practical experience from work freelancer (Front-end, back-end some websites, website design layout design in addition to the poster, banner and artwork ...).</p>
-                        <p>With the ability to receive and solve problems quickly. Always find out the ideas, methods and creativity in optimizing work processes to deliver the best results. Not only that, I was a person with team spirit and high sense of responsibility in their work.</p>
+                        <p>For me the information technology sector is not only popular but also a passion. Right from the time know about computers, the keywords such as "Coder, encryption, security, website ..." has made me see the impressive and come
+                            to it. Particularly in the development and application Website.</p>
+                        <p>During the learning process, I have realized that I need to equip the necessary knowledge through specialized I am studying through exercises and projects. In addition to learning in school I also took advantage of their accumulated
+                            practical experience from work freelancer (Front-end, back-end some websites, website design layout design in addition to the poster, banner and artwork ...).</p>
+                        <p>With the ability to receive and solve problems quickly. Always find out the ideas, methods and creativity in optimizing work processes to deliver the best results. Not only that, I was a person with team spirit and high sense of
+                            responsibility in their work.</p>
                         <p>For me to be working in a dynamic environment, innovative and high connectivity is what makes me feel really happy.</p>
                     </div>
-                    <div class="col-md-4 wow fadeInRight" data-wow-delay="0.6s">
+                    <div class="col-md-4 col-sm-4 wow fadeInRight" data-wow-delay="0.2s">
                         <div class="story-image">
                             <img src="images/anh1.jpg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="row wow fadeInDown" data-wow-delay="0.6s">
-                    <div class="col-md-3 hidden-xs hidden-sm">
+                <div class="row wow fadeInDown" data-wow-delay="0.2s">
+                    <div class="col-md-3 col-xs-3 hidden-xs">
                         <div class="member-item">
                             <div class="member-thumb">
                                 <img src="images/anh2.jpg">
@@ -142,7 +152,7 @@
                         </div>
                     </div>
                     <!-- /.col-md-4 -->
-                    <div class="col-md-8 info">
+                    <div class="col-md-8 col-sm-8 info">
                         <table class="table">
                             <thead>
                                 <tr>
@@ -183,8 +193,8 @@
                         </table>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12 like wow fadeInUp" style="text-align: center" data-wow-delay="0.6s">
+                <div class="row visible-lg visible-md">
+                    <div class="col-lg-12 like wow fadeInUp" style="text-align: center" data-wow-delay="0.2s">
                     </div>
                 </div>
             </div>
@@ -192,12 +202,12 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title">
-                            <h2>Skill</h2>
+                            <h2>Skills</h2>
                         </div>
                     </div>
                 </div>
                 <div class="row wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-4">
                         <div class="service-item clearfix">
                             <div class="service-icon">
                                 <i class="fa fa-lightbulb-o fa-2x"></i>
@@ -207,7 +217,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-4">
                         <div class="service-item">
                             <div class="service-icon">
                                 <i class="fa fa-users fa-2x"></i>
@@ -217,7 +227,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-4">
                         <div class="service-item">
                             <div class="service-icon">
                                 <i class="fa fa-check fa-2x"></i>
@@ -229,8 +239,8 @@
                     </div>
                 </div>
                 <div class="row our-skills">
-                    <div class="col-md-8 wow fadeInLeft" data-wow-delay="0.6s">
-                        <h3>Skill</h3>
+                    <div class="col-md-8 col-sm-8 wow fadeInLeft" data-wow-delay="0.2s">
+                        <h3>Skills</h3>
                         <table class="table">
                             <thead>
                                 <tr>
@@ -256,7 +266,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="col-md-4 wow fadeInRight" data-wow-delay="0.6s">
+                    <div class="col-md-4 col-sm-4 wow fadeInRight" data-wow-delay="0.2s">
                         <ul class="progess-bars">
                             <li>
                                 <div class="progress">
@@ -297,35 +307,44 @@
                     </div>
                 </div>
                 <div class="row our-skills" style="margin-top: 0px">
-                    <div class="col-md-8 wow fadeInLeft" data-wow-delay="0.4s">
+                    <div class="col-md-8 col-sm-8 wow fadeInLeft" data-wow-delay="0.4s">
                         <h3>Experience</h3>
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <td style="padding-right: 40px">[08/2015]</td>
-                                    <td> Join PISI program "Incubation of Start-up and Innovation Ideas on Information Technology"</td>
+                                    <td style="padding-right: 40px">[06/2016]</td>
+                                    <td>Plan: The service system organizes scientific seminar</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>[02/2015]</td>
-                                    <td>Second prize competitions General Informatics College of Information Technology</td>
+                                    <td>[12/2015]</td>
+                                    <td>Plan: Building website: Downtown bus station of Da Nang City</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 40px">[08/2015]</td>
+                                    <td>Participating in the PISI program start-up "Incubation of start-up and Innovation Ideas on Information Technology"</td>
+                                </tr>
+                                <tr>
+                                    <td>[2015]</td>
+                                    <td>Part-time job: Frontend for Global Media World Company Limited</td>
+                                </tr>
+                                </tr>
+                                <tr>
+                                    <td>[2015]</td>
+                                    <td>Practicing at Global Media World Company Limited</td>
                                 </tr>
                                 <tr>
                                     <td>[11/2014]</td>
-                                    <td>Join scientific College of Information Technology</td>
-                                </tr>
-                                <tr>
-                                    <td>[06/2014]</td>
-                                    <td>Summer volunteer</td>
+                                    <td>Participating in research of College of Information Technology</td>
                                 </tr>
                                 <tr>
                                     <td>[2014]</td>
-                                    <td>Freelancer graphic design and Web programming ...</td>
+                                    <td>Graphic design Freelancer</td>
                                 </tr>
                                 <tr>
-                                    <td>[2013-2016]</td>
-                                    <td>Studied at the College of Information Technology - University of Danang</td>
+                                    <td><b>[2013-2016]</b></td>
+                                    <td><b>Studied at the College of Information Technology - University of Danang</b></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -333,56 +352,40 @@
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <td style="padding-right: 40px">[27/05/2016]</td>
-                                    <td>The grand prize winner Logo design environment</td>
+                                    <td><b>[06/2016]</b></td>
+                                    <td><b>Graduation Good with IT majors in the College of Information Technology</b></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-right: 20px">[27/05/2016]</td>
+                                    <td>First Prize of Envitonmental Logo Design Contest.</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>[09/01/2016]</td>
-                                    <td>Chứng nhận sinh viên 5 tốt cấp Thành phố Đà Nẵng</td>
-                                </tr>
-                                <tr>
-                                    <td>[08/01/2016]</td>
-                                    <td>Giấy chứng nhận sinh viên 5 tốt cấp Trường và cấp ĐH Đà Nẵng</td>
-                                </tr>
-                                <tr>
-                                    <td>[19/11/2015]</td>
-                                    <td>Giấy khen Đoàn viên xuất sắc năm học 2014 - 2015</td>
+                                    <td>Certification of “five-good student” was granted by Da nang University</td>
                                 </tr>
                                 <tr>
                                     <td>[16/11/2015]</td>
-                                    <td>Giấy khen giải nhất cuộc thi Tin học đại cương của Trường CĐ Công nghệ thông tin</td>
+                                    <td>First Prize of General Informatics Contest of College of Information Technology</td>
                                 </tr>
                                 <tr>
                                     <td>[09/10/2015]</td>
-                                    <td>Certificate of participation in the program "Incubation of Start-up and Innovation Ideas on Information Technology"</td>
+                                    <td>Certificate of participating in the PISI program start-up "Incubation of start-up and Innovation Ideas on Information Technology"</td>
                                 </tr>
                                 <tr>
                                     <td>[04/06/2015]</td>
-                                    <td>Certificate of participation in scientific research College of Information Technology</td>
-                                </tr>
-                                <tr>
-                                    <td>[26/03/2015]</td>
-                                    <td>Giấy khen Đoàn viên xuất sắc tháng</td>
-                                </tr>
-                                <tr>
-                                    <td>[22/12/2014]</td>
-                                    <td>Giấy khen giải khuyến khích: "Hội trại ẩm thực" (nhóm)</td>
+                                    <td>Certificate of Participating in research of College of Information Technology</td>
                                 </tr>
                                 <td>[31/08/2014]</td>
                                 <td>Certificates contest "DaNang International Marathon"</td>
                                 </tr>
-                                <tr>
-                                    <td>[02/07/2014]</td>
-                                    <td>Certified volunteer summer</td>
-                                </tr>
                             </tbody>
                         </table>
-                        <h3>Limit</h3>
-                        <p>Foreign language ability is basic.</p>
+                        <!-- <h3>Hạn chế</h3>
+                        <p>Khả năng về ngoại ngữ chưa tốt.</p> -->
                     </div>
-                    <div class="col-md-4 wow fadeInRight" data-wow-delay="0.4s">
+                    <div class="col-md-4 col-sm-4 wow fadeInRight" data-wow-delay="0.4s">
                         <div class="col-md-12 margin-clear">
                             <div class="member-item">
                                 <div class="member-thumb">
@@ -448,139 +451,133 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title">
-                            <h2>Project</h2>
+                            <h2>Sản phẩm</h2>
                         </div>
                     </div>
                 </div>
                 <!--  row 1 -->
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="portfolio-item wow fadeInDown" data-wow-delay="0.1s">
-                            <div class="portfolio-thumb">
-                                <img src="images/sp/ben-xe.jpg" alt="">
-                                <div class="overlay-p">
-                                    <a href="images/sp/ben-xe.jpg" data-gal="prettyPhoto">
-                                        <i class="fa fa-arrows-alt fa-2x"></i>
-                                    </a>
-                                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-item wow fadeInDown" data-wow-delay="0.1s">
+                        <div class="portfolio-thumb">
+                            <img src="images/sp/ben-xe.jpg" alt="">
+                            <div class="overlay-p">
+                                <a href="images/sp/ben-xe.jpg" data-gal="prettyPhoto">
+                                    <i class="fa fa-arrows-alt fa-2x"></i>
+                                </a>
                             </div>
-                            <h3 class="portfolio-title"><a href="#"></a></h3>
                         </div>
+                        <h3 class="portfolio-title"><a href="#"></a></h3>
                     </div>
-                    <div class="col-md-4">
-                        <div class="portfolio-item wow fadeInDown" data-wow-delay="0.2s">
-                            <div class="portfolio-thumb">
-                                <img src="images/sp/tan-hoang-hao.jpg" alt="">
-                                <div class="overlay-p">
-                                    <a href="images/sp/tan-hoang-hao.jpg" data-gal="prettyPhoto">
-                                        <i class="fa fa-arrows-alt fa-2x"></i>
-                                    </a>
-                                </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-item wow fadeInDown" data-wow-delay="0.2s">
+                        <div class="portfolio-thumb">
+                            <img src="images/sp/tan-hoang-hao.jpg" alt="">
+                            <div class="overlay-p">
+                                <a href="images/sp/tan-hoang-hao.jpg" data-gal="prettyPhoto">
+                                    <i class="fa fa-arrows-alt fa-2x"></i>
+                                </a>
                             </div>
-                            <h3 class="portfolio-title"><a href="#"></a></h3>
                         </div>
+                        <h3 class="portfolio-title"><a href="#"></a></h3>
                     </div>
-                    <div class="col-md-4">
-                        <div class="portfolio-item wow fadeInDown" data-wow-delay="0.3s">
-                            <div class="portfolio-thumb">
-                                <img src="images/sp/breadzone.jpg" alt="">
-                                <div class="overlay-p">
-                                    <a href="images/sp/breadzone.jpg" data-gal="prettyPhoto">
-                                        <i class="fa fa-arrows-alt fa-2x"></i>
-                                    </a>
-                                </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-item wow fadeInDown" data-wow-delay="0.2s">
+                        <div class="portfolio-thumb">
+                            <img src="images/sp/breadzone.jpg" alt="">
+                            <div class="overlay-p">
+                                <a href="images/sp/breadzone.jpg" data-gal="prettyPhoto">
+                                    <i class="fa fa-arrows-alt fa-2x"></i>
+                                </a>
                             </div>
-                            <h3 class="portfolio-title"><a href="#"></a></h3>
                         </div>
+                        <h3 class="portfolio-title"><a href="#"></a></h3>
                     </div>
                 </div>
                 <!--  row 2 -->
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="portfolio-item wow fadeInDown" data-wow-delay="0.4s">
-                            <div class="portfolio-thumb">
-                                <img src="images/sp/thi-toeic.jpg" alt="">
-                                <div class="overlay-p">
-                                    <a href="images/sp/thi-toeic.jpg" data-gal="prettyPhoto">
-                                        <i class="fa fa-arrows-alt fa-2x"></i>
-                                    </a>
-                                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-item wow fadeInDown" data-wow-delay="0.4s">
+                        <div class="portfolio-thumb">
+                            <img src="images/sp/thi-toeic.jpg" alt="">
+                            <div class="overlay-p">
+                                <a href="images/sp/thi-toeic.jpg" data-gal="prettyPhoto">
+                                    <i class="fa fa-arrows-alt fa-2x"></i>
+                                </a>
                             </div>
-                            <h3 class="portfolio-title"><a href="#"></a></h3>
                         </div>
+                        <h3 class="portfolio-title"><a href="#"></a></h3>
                     </div>
-                    <div class="col-md-4">
-                        <div class="portfolio-item wow fadeInDown" data-wow-delay="0.5s">
-                            <div class="portfolio-thumb">
-                                <img src="images/sp/noi-that.jpg" alt="">
-                                <div class="overlay-p">
-                                    <a href="images/sp/noi-that.jpg" data-gal="prettyPhoto">
-                                        <i class="fa fa-arrows-alt fa-2x"></i>
-                                    </a>
-                                </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-item wow fadeInDown" data-wow-delay="0.5s">
+                        <div class="portfolio-thumb">
+                            <img src="images/sp/noi-that.jpg" alt="">
+                            <div class="overlay-p">
+                                <a href="images/sp/noi-that.jpg" data-gal="prettyPhoto">
+                                    <i class="fa fa-arrows-alt fa-2x"></i>
+                                </a>
                             </div>
-                            <h3 class="portfolio-title"><a href="#"></a></h3>
                         </div>
+                        <h3 class="portfolio-title"><a href="#"></a></h3>
                     </div>
-                    <div class="col-md-4">
-                        <div class="portfolio-item wow fadeInDown" data-wow-delay="0.6s">
-                            <div class="portfolio-thumb">
-                                <img src="images/sp/yay-yay.jpg" alt="">
-                                <div class="overlay-p">
-                                    <a href="images/sp/yay-yay.jpg" data-gal="prettyPhoto">
-                                        <i class="fa fa-arrows-alt fa-2x"></i>
-                                    </a>
-                                </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-item wow fadeInDown" data-wow-delay="0.2s">
+                        <div class="portfolio-thumb">
+                            <img src="images/sp/yay-yay.jpg" alt="">
+                            <div class="overlay-p">
+                                <a href="images/sp/yay-yay.jpg" data-gal="prettyPhoto">
+                                    <i class="fa fa-arrows-alt fa-2x"></i>
+                                </a>
                             </div>
-                            <h3 class="portfolio-title"><a href="#"></a></h3>
                         </div>
+                        <h3 class="portfolio-title"><a href="#"></a></h3>
                     </div>
                 </div>
                 <!--  row 3 -->
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="portfolio-item wow fadeInDown" data-wow-delay="0.7s">
-                            <div class="portfolio-thumb">
-                                <img src="images/sp/svg-cit.jpg" alt="">
-                                <div class="overlay-p">
-                                    <a href="images/sp/svg-cit.jpg" data-gal="prettyPhoto">
-                                        <i class="fa fa-arrows-alt fa-2x"></i>
-                                    </a>
-                                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-item wow fadeInDown" data-wow-delay="0.7s">
+                        <div class="portfolio-thumb">
+                            <img src="images/sp/svg-cit.jpg" alt="">
+                            <div class="overlay-p">
+                                <a href="images/sp/svg-cit.jpg" data-gal="prettyPhoto">
+                                    <i class="fa fa-arrows-alt fa-2x"></i>
+                                </a>
                             </div>
-                            <h3 class="portfolio-title"><a href="#"></a></h3>
                         </div>
+                        <h3 class="portfolio-title"><a href="#"></a></h3>
                     </div>
-                    <div class="col-md-4">
-                        <div class="portfolio-item wow fadeInDown" data-wow-delay="0.8s">
-                            <div class="portfolio-thumb">
-                                <img src="images/sp/tinchi.jpg" alt="">
-                                <div class="overlay-p">
-                                    <a href="images/sp/tinchi.jpg" data-gal="prettyPhoto">
-                                        <i class="fa fa-arrows-alt fa-2x"></i>
-                                    </a>
-                                </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-item wow fadeInDown" data-wow-delay="0.8s">
+                        <div class="portfolio-thumb">
+                            <img src="images/sp/tinchi.jpg" alt="">
+                            <div class="overlay-p">
+                                <a href="images/sp/tinchi.jpg" data-gal="prettyPhoto">
+                                    <i class="fa fa-arrows-alt fa-2x"></i>
+                                </a>
                             </div>
-                            <h3 class="portfolio-title"><a href="#"></a></h3>
                         </div>
+                        <h3 class="portfolio-title"><a href="#"></a></h3>
                     </div>
-                    <div class="col-md-4">
-                        <div class="portfolio-item wow fadeInDown" data-wow-delay="0.9s">
-                            <div class="portfolio-thumb">
-                                <img src="images/sp/ts.jpg" alt="">
-                                <div class="overlay-p">
-                                    <a href="images/sp/ts.jpg" data-gal="prettyPhoto">
-                                        <i class="fa fa-arrows-alt fa-2x"></i>
-                                    </a>
-                                </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="portfolio-item wow fadeInDown" data-wow-delay="0.9s">
+                        <div class="portfolio-thumb">
+                            <img src="images/sp/ts.jpg" alt="">
+                            <div class="overlay-p">
+                                <a href="images/sp/ts.jpg" data-gal="prettyPhoto">
+                                    <i class="fa fa-arrows-alt fa-2x"></i>
+                                </a>
                             </div>
-                            <h3 class="portfolio-title"><a href="#"></a></h3>
                         </div>
+                        <h3 class="portfolio-title"><a href="#"></a></h3>
                     </div>
                 </div>
                 <!--  row 4 -->
                 <div class="row" id="panel">
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
                         <div class="portfolio-item">
                             <div class="portfolio-thumb">
                                 <img src="images/sp/van-tue-do.jpg" alt="">
@@ -593,7 +590,7 @@
                             <h3 class="portfolio-title"><a href="#"></a></h3>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
                         <div class="portfolio-item">
                             <div class="portfolio-thumb">
                                 <img src="images/sp/fashion-dn.jpg" alt="">
@@ -606,12 +603,12 @@
                             <h3 class="portfolio-title"><a href="#"></a></h3>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
                         <div class="portfolio-item">
                             <div class="portfolio-thumb">
-                                <img src="images/sp/blend3.jpg" alt="">
+                                <img src="images/sp/aocuoi.jpg" alt="">
                                 <div class="overlay-p">
-                                    <a href="images/sp/blend3.jpg" data-gal="prettyPhoto">
+                                    <a href="images/sp/aocuoi.jpg" data-gal="prettyPhoto">
                                         <i class="fa fa-arrows-alt fa-2x"></i>
                                     </a>
                                 </div>
@@ -621,8 +618,8 @@
                     </div>
                 </div>
                 <!--  row 5 -->
-                <div class="row" id="panel">
-                    <div class="col-md-4">
+                <div class="row" id="panel2">
+                    <div class="col-md-4 col-sm-6">
                         <div class="portfolio-item">
                             <div class="portfolio-thumb">
                                 <img src="images/sp/blend4.jpg" alt="">
@@ -635,7 +632,7 @@
                             <h3 class="portfolio-title"><a href="#"></a></h3>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
                         <div class="portfolio-item">
                             <div class="portfolio-thumb">
                                 <img src="images/sp/blend1.png" alt="">
@@ -648,12 +645,12 @@
                             <h3 class="portfolio-title"><a href="#"></a></h3>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
                         <div class="portfolio-item">
                             <div class="portfolio-thumb">
-                                <img src="images/sp/blend5.jpg" alt="">
-                                <div class="overlay-p" style="width: 272px; height:182px">
-                                    <a href="images/sp/blend5.jpg" data-gal="prettyPhoto">
+                                <img src="images/sp/wd.jpg" alt="">
+                                <div class="overlay-p">
+                                    <a href="images/sp/wd.jpg" data-gal="prettyPhoto">
                                         <i class="fa fa-arrows-alt fa-2x"></i>
                                     </a>
                                 </div>
@@ -679,32 +676,33 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-12">
                         <address class="map-contact">
                             <table class="table contact">
-                                <thead>
-                                    <tr>
-                                        <td><i class="fa fa-map-marker"></i>Address:</td>
-                                        <td>Ton Dan Street 520/2 - Cam Le District - City. Danang</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><i class="fa fa-mobile-phone"></i>Cell Phone:</td>
-                                        <td><a href="tel:01264664699"> 01264 666 699</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa fa-envelope"></i>Email: </td>
-                                        <td><a href="mailto:nguyenhuukhuyenudn@gmail.com">nguyenhuukhuyenudn@gmail.com</a></td>
-                                    </tr>
-                                </tbody>
+                              <thead>
+                                  <tr>
+                                      <td><i class="fa fa-map-marker"></i>Address:</td>
+                                      <td>Ton Dan Street 520/2 - Cam Le District - City. Danang</td>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td><i class="fa fa-mobile-phone"></i>Phone:</td>
+                                      <td><a href="tel:01264664699"> 01264 666 699</a></td>
+                                  </tr>
+                                  <tr>
+                                      <td><i class="fa fa-envelope"></i>Email: </td>
+                                      <td><a href="mailto:nguyenhuukhuyenudn@gmail.com">nguyenhuukhuyenudn@gmail.com</a></td>
+                                  </tr>
+                              </tbody>
                             </table>
                         </address>
                         <div class="map-holder">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3834.5368035781794!2d108.1821326!3d16.0376102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142197133e6459f%3A0xdb29ccfd8834dbba!2zNTIwIFTDtG4gxJDhuqNuLCBD4bqpbSBM4buHLCDEkMOgIE7hurVuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1448354817004" width="100%" height="274" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3834.5368035781794!2d108.1821326!3d16.0376102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142197133e6459f%3A0xdb29ccfd8834dbba!2zNTIwIFTDtG4gxJDhuqNuLCBD4bqpbSBM4buHLCDEkMOgIE7hurVuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1448354817004"
+                                width="100%" height="326" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 hidden-sm hidden-xs">
                         <div class="cal1"></div>
                     </div>
                 </div>
@@ -733,36 +731,42 @@
                 </div>
             </div>
         </div>
+        <div class="card-me hidden-xs">
+            <div class="popup">
+                <a href="#" class="close"><i class="fa fa-close"></i></a>
+                <div class="col-lg-5 col-md-5 col-sm-5">
+                    <img src="images/anh1.jpg" alt="">
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-7">
+                    <h5>Nguyen Huu Khuyen</h5>
+                    <h5>01264 664 699</h5>
+                    <h5>nguyenhuukhuyenudn@gmail.com</h5>
+                    <h5>Thank you for taking the time to read my CV!</h5>
+                    <h5>Have a nice day!</h5>
+                    <span class="socialShare"></span>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/jquery.singlePageNav.js"></script>
     <script src="js/jquery.flexslider.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/share/plugin.js"></script>
+    <!-- <script src="js/jquery.nicescroll.min.js"></script> -->
     <script src="js/wow.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/time.js"></script>
-    <script>
-    $(document).ready(function() {
-        $("#panel,#panel2").hide();
-        $("#flip").click(function() {
-            $("#panel,#panel2").slideToggle("slow");
-        });
-        
-    });
-    </script>
-    <script>
-    $(document).ready(function() {
-        $("a[data-gal^='prettyPhoto']").prettyPhoto({
-            hook: 'data-gal'
-        });
-    });
-    </script>
     <script src="calendar/underscore-min.js"></script>
     <script src="calendar/moment.min.js"></script>
     <script src="calendar/clndr.js"></script>
     <script src="calendar/demo.js"></script>
-	<!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57872d83d2e29339"></script> -->
+    <script type="text/javascript">
+        $("#flip a").click(function() {
+            var e = $(this).text();
+            "More" == e ? $(this).text("Hide") : $(this).text("More");
+        }),
+    </script>
 </body>
 
 </html>
