@@ -71,8 +71,11 @@
     margin: 0;
     list-style: none
 }
-.center{
-  text-align: center!important;
+.table{
+  text-align: justify;
+}
+.center {
+    text-align: center!important;
 }
 body {
     font: 14px/1.85em 'Open Sans', Arial, Helvetice Neue, sans-serif;
@@ -178,17 +181,36 @@ a.largeButton {
     padding: 10px 20px;
     border-bottom: 3px solid
 }
-.info-mobile img{
-  width: 100%;
+.info-mobile img {
+    width: 100%;
 }
-.info-mobile h1{
-  letter-spacing: 2px;
-  font-family: bebasneue;
-  border-bottom: 2px solid #38a9e3;
+.info-mobile h1 {
+    letter-spacing: 2px;
+    font-family: bebasneue;
+    border-bottom: 2px solid #38a9e3;
 }
-.info-mobile{
+.info-mobile {
+    text-align: center;
+    /*background: #38a9e3;*/
+}
+.download-cv a:hover{
+  color:#FFF;
+}
+.download-cv a{
+  color:#FFF;
+}
+.download-cv{
+  padding: 5px 9px;
+  position: fixed;
   text-align: center;
-  /*background: #38a9e3;*/
+  bottom: 20%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  right: 0px;
+  background: #38A9E3;
 }
 .logo a h1, .slider-caption h2 {
     text-transform: uppercase;
