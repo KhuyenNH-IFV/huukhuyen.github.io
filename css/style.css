@@ -74,6 +74,9 @@
 .table{
   text-align: justify;
 }
+.left{
+    text-align:left!important;
+}
 .center {
     text-align: center!important;
 }
@@ -500,7 +503,7 @@ a.menu-toggle-btn i {
 }
 .member-content p {
     color: #aaa;
-    font-size: 12px
+    font-size: 12px;
 }
 .social-member li {
     display: inline;
