@@ -228,25 +228,12 @@ a.largeButton {
     border-radius: 0;
     border-bottom: 0
 }
-.homeBgColor {
-    background: #38a9e3
-}
-.homeBgColor:hover {
-    background-color: #16709f
-}
 .portfolioBgColor {
     background: #38e395;
     cursor: pointer
 }
 .portfolioBgColor:hover {
     background-color: #169f60
-}
-.contactBgColor {
-    background: #e3387c;
-    color: #FFF
-}
-.contactBgColor:hover {
-    background-color: #9f164d
 }
 a.largeButton.homeBgColor {
     border-color: #16709f;
@@ -390,6 +377,9 @@ a.menu-toggle-btn i {
     font-weight: 300;
     text-transform: uppercase
 }
+.our-story {
+    text-align: justify;
+}
 .slider-caption p {
     font-size: 16px;
     text-transform: uppercase;
@@ -492,46 +482,9 @@ a.menu-toggle-btn i {
     border: 3px solid #38A9E3;
     font-family: 'helvetica neue'
 }
-.member-content {
-    margin-top: 10px;
-    overflow: hidden
-}
-.member-content h4 {
-    text-transform: uppercase;
-    font-size: 18px;
-    color: #e9b144
-}
-.member-content p {
-    color: #aaa;
-    font-size: 12px;
-}
-.social-member li {
-    display: inline;
-    float: left;
-    width: 40px;
-    height: 40px;
-    background-color: #e9b144;
-    margin-right: 1px
-}
-.social-member li a {
-    display: block;
-    line-height: 40px;
-    color: #fff
-}
-.social-member li:hover {
-    background-color: #e5a424
-}
-.our-story {
-    margin-bottom: 20px
-}
-.our-story p {
-    text-align: justify;
-    color: #000
-}
-.our-story h3 {
-    color: #e9b144;
-    font-size: 24px;
-    margin: 0 0 20px
+.progress-bar {
+    padding-left: 20px;
+    text-align: left;
 }
 .service-item .service-icon, .story-image {
     margin-top: 30px;
@@ -654,36 +607,6 @@ a.menu-toggle-btn i {
     padding-left: 0;
     padding-right: 0;
     border: 1px solid #FFF
-}
-.google-map-canvas {
-    height: 400px
-}
-.contact-form {
-    margin-top: 60px
-}
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    display: block;
-    border: none;
-    border-bottom: 1px solid #d5dbe0;
-    border-top: 1px solid #d5dbe0;
-    padding: 10px 15px;
-    outline: 0
-}
-.contact-form input {
-    height: 46px;
-    margin-bottom: 30px
-}
-.contact-form label {
-    font-weight: 400
-}
-.contact-form label.required:after {
-    content: "*";
-    color: red;
-    margin-left: 5px
-}
-.submit-btn {
-    margin-top: 30px
 }
 .first-footer {
     padding: 50px;
