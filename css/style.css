@@ -507,7 +507,8 @@ a.menu-toggle-btn i {
 }
 .service-item {
     background-color: #FF7800;
-    color: #fff
+    color: #fff;
+    min-height: 84px;
 }
 .service-item .service-icon {
     width: 25%;
