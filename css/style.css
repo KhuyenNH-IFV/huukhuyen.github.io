@@ -525,7 +525,8 @@ a.menu-toggle-btn i {
 }
 .service-item .service-content h3 {
     margin: 0;
-    font-size: 20px
+    font-size: 20px;
+    text-align: left;
 }
 .our-skills {
     margin-top: 80px
