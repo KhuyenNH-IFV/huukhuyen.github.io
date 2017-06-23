@@ -253,6 +253,9 @@ a.largeButton {
     margin: 55px 0 15px;
     background-color: #38a9e3;
     padding: 50px 40px;
+    img {
+        max-width: 100%;
+    }
     a {
         color: #fff;
         h1 {

@@ -304,6 +304,10 @@ a.largeButton.contactBgColor {
   padding: 50px 40px;
 }
 
+.logo img {
+  max-width: 100%;
+}
+
 .logo a {
   color: #fff;
 }
