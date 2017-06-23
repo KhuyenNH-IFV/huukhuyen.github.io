@@ -13,11 +13,9 @@
     <meta property="og:image" content="https://huukhuyen.github.io/images/slide/slide1.jpg" />
     <link rel="icon" href="logo.ico" type="image/x-icon" />
     <link rel="stylesheet" href="calendar/clndr.css">
-    <link href='fonts/sans.css' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel='stylesheet' href='fonts/sans.css' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/misc.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="js/share/plugin.css">
     <link rel="stylesheet" href="css/hover-min.css">
@@ -64,7 +62,6 @@
                             <div class="slider-caption">
                                 <h2></h2>
                                 <p></p>
-                                <!-- <a href="#" class="largeButton homeBgColor"></a> -->
                             </div>
                             <img src="images/slide/slide1.jpg" alt="Slide 1">
                         </li>
@@ -72,7 +69,6 @@
                             <div class="slider-caption">
                                 <h2></h2>
                                 <p></p>
-                                <!-- <a href="#" class="largeButton homeBgColor"></a> -->
                             </div>
                             <img src="images/slide/slide2.jpg" alt="Slide 2">
                         </li>
@@ -80,7 +76,6 @@
                             <div class="slider-caption">
                                 <h2></h2>
                                 <p></p>
-                                <!-- <a href="#" class="largeButton homeBgColor"></a> -->
                             </div>
                             <img src="images/slide/slide3.jpg" alt="Slide 3">
                         </li>
@@ -93,7 +88,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="welcome-text wow bounceInLeft">
+                        <div class="welcome-text">
                             <h2 class="hidden-xs"><a href="#about">Xin chào</a></h2>
                             <h2 class="visible-xs"><a href="#about"><i class="fa fa-angle-double-down"></i></a></h2>
                         </div>
@@ -103,7 +98,7 @@
         </div>
         <!-- /#sTop -->
         <div class="container-fluid">
-            <div id="about" class="section-content">
+            <div id="about" class="section-content fadeTop">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title">
@@ -112,21 +107,23 @@
                     </div>
                 </div>
                 <div class="row our-story">
-                    <div class="col-md-8 col-sm-8 wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="col-md-8 col-sm-8">
                         <h3>Đôi lời về bản thân</h3>
-                        <p>Xin chào các bạn!</p>
-                        <p>Tôi là Nguyễn Hữu Khuyên, năm nay 22 tuổi. Hiện tôi đã tốt nghiệp chuyên ngành Công nghệ Thông tin và đang là một lập trình viên Frontend tại Đà Nẵng.</p>
-                        <p>Là một 9x mang trong mình nhiều khát vọng và mục đích, bên cạnh đó tôi cũng tự nhận thấy mình là một người vui vẻ, dễ hòa đồng và thích sáng tạo sự mới mẻ. Điều tôi cảm thấy may mắn nhất ở tuổi trẻ là được tiếp cận và học hỏi từ nhiều người đi trước giàu kinh nghiệm trong lĩnh vực công nghệ. Nhờ vậy tôi có được nhiều cảm hứng về lập trình, tìm tòi và tham gia vào nhiều dự án website khi còn là sinh viên.</p>
-                        <p>Với đam mê về lập trình và có thói quen theo dõi sự phát triển của công nghệ cùng sở thích về lập trình web. Tôi nhận ra Frontend hiện đang dẫn đầu về sự phát triển ứng dụng trên nền tảng web, tôi nghĩ đây là một hướng đúng đắn để theo đuổi.</p>
-                        <p>Với tôi được làm việc trong môi trường năng động, sáng tạo và có tính kết nối cao là điều làm tôi cảm thấy thật sự hạnh phúc.</p>
+                        <div class="descriptionMy">
+                            <p>Xin chào các bạn!</p>
+                            <p>Tôi là Nguyễn Hữu Khuyên, năm nay 22 tuổi. Hiện tôi đã tốt nghiệp chuyên ngành Công nghệ Thông tin và đang là một lập trình viên Frontend tại Đà Nẵng.</p>
+                            <p>Là một 9x mang trong mình nhiều khát vọng và mục đích, bên cạnh đó tôi cũng tự nhận thấy mình là một người vui vẻ, dễ hòa đồng và thích sáng tạo sự mới mẻ. Điều tôi cảm thấy may mắn nhất ở tuổi trẻ là được tiếp cận và học hỏi từ nhiều người đi trước giàu kinh nghiệm trong lĩnh vực công nghệ. Nhờ vậy tôi có được nhiều cảm hứng về lập trình, tìm tòi và tham gia vào nhiều dự án website khi còn là sinh viên.</p>
+                            <p>Với đam mê về lập trình và có thói quen theo dõi sự phát triển của công nghệ cùng sở thích về lập trình web. Tôi nhận ra Frontend hiện đang dẫn đầu về sự phát triển ứng dụng trên nền tảng web, tôi nghĩ đây là một hướng đúng đắn để theo đuổi.</p>
+                            <p>Với tôi được làm việc trong môi trường năng động, sáng tạo và có tính kết nối cao là điều làm tôi cảm thấy thật sự hạnh phúc.</p>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-sm-4 wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="col-md-4 col-sm-4">
                         <div class="story-image">
                             <img src="images/anh1.jpg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="row wow fadeInDown" data-wow-delay="0.3s">
+                <div class="row">
                     <div class="col-md-3 col-xs-3 hidden-xs">
                         <div class="member-item">
                             <div class="member-thumb">
@@ -178,11 +175,12 @@
                     </div>
                 </div>
                 <div class="row visible-lg visible-md">
-                    <div class="col-lg-12 like wow fadeInUp" style="text-align: center" data-wow-delay="0.3s">
+                    <div class="col-lg-12 like">
                     </div>
                 </div>
             </div>
-            <div id="services" class="section-content">
+            <!-- /about -->
+            <div id="services" class="section-content fadeTop">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title">
@@ -190,7 +188,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row wow fadeInUp" data-wow-delay="0.2s">
+                <div class="row">
                     <div class="col-md-4 col-sm-4">
                         <div class="service-item clearfix">
                             <div class="service-icon">
@@ -223,7 +221,7 @@
                     </div>
                 </div>
                 <div class="row our-skills">
-                    <div class="col-md-8 col-sm-8 wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="col-md-8 col-sm-8">
                         <h3>Kỹ năng</h3>
                         <table class="table">
                             <thead>
@@ -256,7 +254,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="col-md-4 col-sm-4 wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="col-md-4 col-sm-4">
                         <ul class="progess-bars">
                             <li>
                                 <div class="progress">
@@ -307,7 +305,7 @@
                     </div>
                 </div>
                 <div class="row our-skills" style="margin-top: 0px">
-                    <div class="col-md-8 col-sm-8 wow fadeInLeft" data-wow-delay="0.4s">
+                    <div class="col-md-8 col-sm-8">
                         <h3>Kinh nghiệm</h3>
                         <table class="table">
                             <tbody>
@@ -385,7 +383,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="col-md-4 col-sm-4 wow fadeInRight" data-wow-delay="0.4s">
+                    <div class="col-md-4 col-sm-4">
                         <div class="col-md-12 margin-clear">
                             <div class="member-item">
                                 <div class="member-thumb">
@@ -447,7 +445,8 @@
                     </div>
                 </div>
             </div>
-            <div id="portfolio" class="section-content">
+            <!-- /services -->
+            <div id="portfolio" class="section-content fadeTop">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title">
@@ -457,7 +456,7 @@
                 </div>
                 <!--  row 1 -->
                 <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item wow fadeInDown" data-wow-delay="0.1s">
+                    <div class="portfolio-item">
                         <div class="portfolio-thumb">
                             <img src="images/sp/ben-xe.jpg" alt="">
                             <div class="overlay-p">
@@ -470,7 +469,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item wow fadeInDown" data-wow-delay="0.2s">
+                    <div class="portfolio-item">
                         <div class="portfolio-thumb">
                             <img src="images/sp/ryo.jpg" alt="">
                             <div class="overlay-p">
@@ -483,7 +482,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item wow fadeInDown" data-wow-delay="0.3s">
+                    <div class="portfolio-item">
                         <div class="portfolio-thumb">
                             <img src="images/sp/als.jpg" alt="">
                             <div class="overlay-p">
@@ -497,7 +496,7 @@
                 </div>
                 <!--  row 2 -->
                 <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item wow fadeInDown" data-wow-delay="0.4s">
+                    <div class="portfolio-item">
                         <div class="portfolio-thumb">
                             <img src="images/sp/thi-toeic.jpg" alt="">
                             <div class="overlay-p">
@@ -510,7 +509,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item wow fadeInDown" data-wow-delay="0.5s">
+                    <div class="portfolio-item">
                         <div class="portfolio-thumb">
                             <img src="images/sp/shopmobi.jpg" alt="">
                             <div class="overlay-p">
@@ -523,7 +522,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item wow fadeInDown" data-wow-delay="0.3s">
+                    <div class="portfolio-item">
                         <div class="portfolio-thumb">
                             <img src="images/sp/dai-han.jpg" alt="">
                             <div class="overlay-p">
@@ -537,7 +536,7 @@
                 </div>
                 <!--  row 3 -->
                 <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item wow fadeInDown" data-wow-delay="0.7s">
+                    <div class="portfolio-item">
                         <div class="portfolio-thumb">
                             <img src="images/sp/bachyen.jpg" alt="">
                             <div class="overlay-p">
@@ -550,7 +549,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item wow fadeInDown" data-wow-delay="0.8s">
+                    <div class="portfolio-item">
                         <div class="portfolio-thumb">
                             <img src="images/sp/tinchi.jpg" alt="">
                             <div class="overlay-p">
@@ -563,7 +562,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item wow fadeInDown" data-wow-delay="0.9s">
+                    <div class="portfolio-item">
                         <div class="portfolio-thumb">
                             <img src="images/sp/ts.jpg" alt="">
                             <div class="overlay-p">
@@ -661,13 +660,13 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="load-more wow pulse" id="flip" data-wow-delay="1s">
-                            <a class="largeButton portfolioBgColor">Xem thêm</a>
+                        <div class="load-more pulse" id="flip"><a class="largeButton portfolioBgColor">Xem thêm</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="contact" class="section-content">
+            <!-- /portfolio -->
+            <div id="contact" class="section-content fadeTop">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title">
@@ -707,6 +706,7 @@
                     </div>
                 </div>
             </div>
+            <!-- /contact -->
         </div>
         <div class="site-footer">
             <div class="first-footer">
@@ -756,7 +756,6 @@
     <script src="js/jquery.flexslider.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/share/plugin.js"></script>
-    <script src="js/wow.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/time.js"></script>
     <script src="calendar/underscore-min.js"></script>
