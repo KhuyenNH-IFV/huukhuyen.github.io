@@ -1,774 +1,226 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 
 <head>
-    <title>Nguyễn Hữu Khuyên - Lý lịch ứng viên</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="initial-scale=1">
-    <meta name="keywords" content="Nguyễn Hữu Khuyên" />
-    <meta name="description" content="Nguyễn Hữu Khuyên" />
-    <meta name="abstract" content="Nguyễn Hữu Khuyên" />
-    <meta http-equiv="content-language" content="vi" />
-    <meta property="og:title" content="Nguyễn Hữu Khuyên - Lý lịch ứng viên - Frontend Engineer" />
-    <meta property="og:image" content="https://huukhuyen.github.io/images/slide/slide1.jpg" />
-    <link rel="icon" href="logo.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="calendar/clndr.css">
-    <link rel='stylesheet' href='fonts/sans.css' type='text/css'>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/misc.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="js/share/plugin.css">
-    <link rel="stylesheet" href="css/hover-min.css">
+	<title>Nguyễn Hữu Khuyên | Biển rộng trời cao cứ vẫy vùng</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<base href="http://localhost:3000/" />
+<link rel="icon" href="logo.ico" type="image/x-icon" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/flatWeatherPlugin.css" />
+	<link rel="stylesheet" href="assets/css/share.css" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif%3Aregular&subset=vietnamese&ver=4.8" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head>
 
-<body>
-    <div class="responsive-navigation visible-sm visible-xs" style="text-align:center">
-        <a href="#" class="menu-toggle-btn">
-            <i class="fa fa-bars fa-2x"></i>
-        </a>
-        <h5><a href="#">Việt Nam</a> / <a href="https://huukhuyen.github.io/english.html">English</a></h5>
-        <div class="navigation responsive-menu">
-            <ul>
-                <li class="home"><a href="#huukhuyen"><i class="fa fa-home fa-2x"></i></a></li>
-                <li class="about"><a href="#about">Giới thiệu</a></li>
-                <li class="services"><a href="#services">Kỹ năng</a></li>
-                <li class="portfolio"><a href="#portfolio">Sản phẩm</a></li>
-                <li class="contact"><a href="#contact">Liên hệ</a></li>
-            </ul>
-        </div>
-    </div>
-    <div id="main-sidebar" class="hidden-xs hidden-sm">
-        <div class="logo">
-            <a href="#"><img src="images/logo.png" alt=""></a>
-            <p>Web Frontend Developer</p>
-        </div>
-        <p class="language"><a style="color:#FFF;" href="#">Việt Nam</a> / <a href="https://huukhuyen.github.io/english.html">English</a></p>
-        <div class="navigation">
-            <ul class="main-menu">
-                <li class="home"><a href="#huukhuyen"><i class="fa fa-home fa-2x"></i></a></li>
-                <li class="about"><a href="#about">Giới thiệu</a></li>
-                <li class="services"><a href="#services">Kỹ năng</a></li>
-                <li class="portfolio"><a href="#portfolio">Sản phẩm</a></li>
-                <li class="contact"><a href="#contact">Liên hệ</a></li>
-            </ul>
-        </div>
-    </div>
-    <div id="main-content">
-        <div id="huukhuyen">
-            <div class="main-slider">
-                <div class="flexslider hidden-xs">
-                    <ul class="slides">
-                        <li>
-                            <div class="slider-caption">
-                                <h2></h2>
-                                <p></p>
-                            </div>
-                            <img src="images/slide/slide1.jpg" alt="Slide 1">
-                        </li>
-                        <li>
-                            <div class="slider-caption">
-                                <h2></h2>
-                                <p></p>
-                            </div>
-                            <img src="images/slide/slide2.jpg" alt="Slide 2">
-                        </li>
-                        <li>
-                            <div class="slider-caption">
-                                <h2></h2>
-                                <p></p>
-                            </div>
-                            <img src="images/slide/slide3.jpg" alt="Slide 3">
-                        </li>
-                    </ul>
-                </div>
-                <div class="info-mobile visible-xs">
-                    <a href="#"><h1>Nguyễn Hữu Khuyên</h1></a>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="welcome-text">
-                            <h2 class="hidden-xs"><a href="#about">Xin chào</a></h2>
-                            <h2 class="visible-xs"><a href="#about"><i class="fa fa-angle-double-down"></i></a></h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /#sTop -->
-        <div class="container-fluid">
-            <div id="about" class="section-content fadeTop">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title">
-                            <h2>Giới thiệu</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row our-story">
-                    <div class="col-md-8 col-sm-8">
-                        <h3>Đôi lời về bản thân</h3>
-                        <div class="descriptionMy">
-                            <p>Xin chào các bạn!</p>
-                            <p>Tôi là Nguyễn Hữu Khuyên, năm nay 22 tuổi. Hiện tôi đã tốt nghiệp chuyên ngành Công nghệ Thông tin và đang là một lập trình viên Frontend tại Đà Nẵng.</p>
-                            <p>Là một 9x mang trong mình nhiều khát vọng và mục đích, bên cạnh đó tôi cũng tự nhận thấy mình là một người vui vẻ, dễ hòa đồng và thích sáng tạo sự mới mẻ. Điều tôi cảm thấy may mắn nhất ở tuổi trẻ là được tiếp cận và học hỏi từ nhiều người đi trước giàu kinh nghiệm trong lĩnh vực công nghệ. Nhờ vậy tôi có được nhiều cảm hứng về lập trình, tìm tòi và tham gia vào nhiều dự án website khi còn là sinh viên.</p>
-                            <p>Với đam mê về lập trình và có thói quen theo dõi sự phát triển của công nghệ cùng sở thích về lập trình web. Tôi nhận ra Frontend hiện đang dẫn đầu về sự phát triển ứng dụng trên nền tảng web, tôi nghĩ đây là một hướng đúng đắn để theo đuổi.</p>
-                            <p>Với tôi được làm việc trong môi trường năng động, sáng tạo và có tính kết nối cao là điều làm tôi cảm thấy thật sự hạnh phúc.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="story-image">
-                            <img src="images/anh1.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 col-xs-3 hidden-xs">
-                        <div class="member-item">
-                            <div class="member-thumb">
-                                <img src="images/anh2.jpg">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col-md-4 -->
-                    <div class="col-md-8 col-sm-8 info">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <td><i class="circle fa fa-user"></i> Họ và tên: </td>
-                                    <td> Nguyễn Hữu Khuyên</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><i class="circle fa fa-calendar"></i> Ngày sinh: </td>
-                                    <td> 19/11/1995</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="circle fa fa-phone"></i> Điện thoại: </td>
-                                    <td><a href="tel:+(84) 1264664699"> +(84) 1264664699</a></td>
-                                </tr>
-                                <tr>
-                                    <td><i class="circle fa fa-map-marker"></i> Địa chỉ: </td>
-                                    <td> 520/2 Tôn Đản - Cẩm Lệ - Tp. Đà Nẵng</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="circle fa fa-envelope"></i> Email: </td>
-                                    <td>nguyenhuukhuyenudn@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="circle fa fa-skype"></i> Skype: </td>
-                                    <td>Khuyen Nguyen H.</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="circle fa fa-globe"></i> Website: </td>
-                                    <td class="website">
-                                        <a class="fb" href="https://huukhuyen.wordpress.com/" target="_blank"><i class="fa fa-wordpress fa-2x"></i></a>
-                                        <a class="fb" href="https://www.facebook.com/khuyennguyen95" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
-                                        <a class="mail" href="https://plus.google.com/u/0/+khuyennguyen95" target="_blank"><i class="fa fa-google-plus-square fa-2x"></i></a>
-                                        <a class="flickr" href="https://www.flickr.com/photos/129833409@N08/" target="_blank"><i class="fa fa-flickr fa-2x"></i></a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="row visible-lg visible-md">
-                    <div class="col-lg-12 like">
-                    </div>
-                </div>
-            </div>
-            <!-- /about -->
-            <div id="services" class="section-content fadeTop">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title">
-                            <h2>Kỹ năng</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 col-sm-4">
-                        <div class="service-item clearfix">
-                            <div class="service-icon">
-                                <i class="fa fa-lightbulb-o fa-2x"></i>
-                            </div>
-                            <div class="service-content">
-                                <h3>Sáng tạo<br>Ham học hỏi</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fa fa-users fa-2x"></i>
-                            </div>
-                            <div class="service-content">
-                                <h3>Đoàn kết<br>Làm việc nhóm tốt</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fa fa-check fa-2x"></i>
-                            </div>
-                            <div class="service-content">
-                                <h3>Trách nhiệm với công việc</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row our-skills">
-                    <div class="col-md-8 col-sm-8">
-                        <h3>Kỹ năng</h3>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <td>Frontend: HTML5, CSS3, JADE, SLIM, LESS/SASS, JAVASCRIPT</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Backend: PHP, JAVA, C/C++ || Database: MySQL, SQL Server || Teamwork: Github</td>
-                                </tr>
-                                <tr>
-                                    <td>Kỹ năng lập trình tốt</td>
-                                </tr>
-                                <tr>
-                                    <td>Thuần thục về đồ họa, sáng tạo và giàu ý tưởng</td>
-                                </tr>
-                                <tr>
-                                    <td>Tinh thần học hỏi, tự học cao, tham gia nhiều câu lạc bộ trao đổi kiến thức</td>
-                                </tr>
-                                <tr>
-                                    <td>Khả năng làm việc nhóm tốt, tiếp thu công việc nhanh</td>
-                                </tr>
-                                <tr>
-                                    <td>Quản lý thời gian, tổ chức và sắp xếp công việc tốt</td>
-                                </tr>
-                                <tr>
-                                    <td>Sử dụng thành thạo tin học văn phòng</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <ul class="progess-bars">
-                            <li>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 90%;">Graphics Design 90%</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 95%;">HTML5, CSS3 95%</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 85%;">JAVASCRIPT, Jquery 85%</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 90%;">SASS/LESS 90%</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 90%;">Bootstrap, CSS Library 90%</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 70%;">Backend/Server 70%</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 85%;">Kỹ năng tự nghiên cứu 85%</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 80%;">MS Office 80%</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 80%;">Làm việc nhóm 80%</div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row our-skills" style="margin-top: 0px">
-                    <div class="col-md-8 col-sm-8">
-                        <h3>Kinh nghiệm</h3>
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <td style="padding-right: 40px">[10/2016]</td>
-                                    <td>Frontend developer tại IFV Asia inc</td>
-                                </tr>
-                                <tr>
-                                    <td style="padding-right: 40px">[06/2016]</td>
-                                    <td>Frontend developer tại AsianTech inc</td>
-                                </tr>
-                                <tr>
-                                    <td style="padding-right: 40px">[06/2016]</td>
-                                    <td>Đồ án tốt nghiệp: Hệ thống phục vụ tổ chức hội thảo khoa học</td>
-                                </tr>
-                                <tr>
-                                    <td>[12/2015]</td>
-                                    <td>Đồ án chuyên ngành: Website Bến xe trung tâm thành phố Đà Nẵng</td>
-                                </tr>
-                                <tr>
-                                    <td>[08/2015]</td>
-                                    <td>Tham gia khởi nghiệp PISI "Ươm mầm ý tưởng sáng tạo và khởi nghiệp Công nghệ thông tin"</td>
-                                </tr>
-                                <tr>
-                                    <td>[2015]</td>
-                                    <td>Part time Frontend tại công ty Thế giới truyền thông</td>
-                                </tr>
-                                <tr>
-                                    <td>[11/2014]</td>
-                                    <td>Nghiên cứu khoa học: "Xây dựng hệ thống đặt phòng khách sạn nền web Local Storage"</td>
-                                </tr>
-                                <tr>
-                                    <td>[06/2014]</td>
-                                    <td>Tham gia tình nguyện hè</td>
-                                </tr>
-                                <tr>
-                                    <td>[2014]</td>
-                                    <td>Freelancer thiết kế đồ họa</td>
-                                </tr>
-                                <tr>
-                                    <td>[2013]</td>
-                                    <td>BCH Liên chi Khoa CNTT Đoàn trường CĐ CNTT - ĐH Đà Nẵng</td>
-                                </tr>
-                                <tr>
-                                    <td><b>[2013-2016]</b></td>
-                                    <td><b>Theo học tại CĐ Công nghệ Thông tin - ĐH Đà Nẵng</b></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <h3>Khen thưởng</h3>
-                        <table class="table">
-                            <thead>
-                                <tr style="font-weight: bold;">
-                                    <td style="padding-right: 20px">[06/2016]</td>
-                                    <td>Tốt nghiệp loại Khá chuyên ngành CNTT tại trường Cao Đẳng Công nghệ Thông tin - Đại học Đà Nẵng</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>[27/05/2016]</td>
-                                    <td>Giải nhất cuộc thi thiết kế Logo môi trường</td>
-                                </tr>
-                                <tr>
-                                    <td>[09/01/2016]</td>
-                                    <td>Sinh viên 5 tốt cấp Thành phố Đà Nẵng</td>
-                                </tr>
-                                <tr>
-                                    <td>[16/11/2015]</td>
-                                    <td>Giải nhất cuộc thi Tin học đại cương của trường</td>
-                                </tr>
-                                <tr>
-                                    <td>[09/10/2015]</td>
-                                    <td>Chứng nhận khởi nghiệp PISI "Ươm mầm ý tưởng sáng tạo và khởi nghiệp Công nghệ thông tin"</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="col-md-12 margin-clear">
-                            <div class="member-item">
-                                <div class="member-thumb">
-                                    <img src="images/nckh/pisi.jpg">
-                                    <div class="overlay">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 margin-clear">
-                            <div class="col-md-12 margin-clear">
-                                <div class="member-item">
-                                    <div class="member-thumb">
-                                        <img src="images/nckh/nckh2.jpg">
-                                        <div class="overlay">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 margin-clear">
-                                <div class="member-item">
-                                    <div class="member-thumb">
-                                        <img src="images/nckh/gameloft.jpg">
-                                        <div class="overlay">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 margin-clear">
-                            <div class="col-md-12 margin-clear">
-                                <div class="member-item">
-                                    <div class="member-thumb">
-                                        <img src="images/nckh/tp.jpg">
-                                        <div class="overlay">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 margin-clear">
-                                <div class="member-item">
-                                    <div class="member-thumb">
-                                        <img src="images/nckh/marathon.jpg">
-                                        <div class="overlay">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 margin-clear">
-                            <div class="member-item">
-                                <div class="member-thumb">
-                                    <img src="images/nckh/tn1.jpg">
-                                    <div class="overlay">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /services -->
-            <div id="portfolio" class="section-content fadeTop">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title">
-                            <h2>Sản phẩm</h2>
-                        </div>
-                    </div>
-                </div>
-                <!--  row 1 -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item">
-                        <div class="portfolio-thumb">
-                            <img src="images/sp/ben-xe.jpg" alt="">
-                            <div class="overlay-p">
-                                <a href="images/sp/ben-xe.jpg" data-gal="prettyPhoto">
-                                    <i class="fa fa-arrows-alt fa-2x"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 class="portfolio-title"><a href="#"></a></h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item">
-                        <div class="portfolio-thumb">
-                            <img src="images/sp/ryo.jpg" alt="">
-                            <div class="overlay-p">
-                                <a href="images/sp/ryo.jpg" data-gal="prettyPhoto">
-                                    <i class="fa fa-arrows-alt fa-2x"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 class="portfolio-title"><a href="#"></a></h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item">
-                        <div class="portfolio-thumb">
-                            <img src="images/sp/als.jpg" alt="">
-                            <div class="overlay-p">
-                                <a href="images/sp/als.jpg" data-gal="prettyPhoto">
-                                    <i class="fa fa-arrows-alt fa-2x"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 class="portfolio-title"><a href="#"></a></h3>
-                    </div>
-                </div>
-                <!--  row 2 -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item">
-                        <div class="portfolio-thumb">
-                            <img src="images/sp/thi-toeic.jpg" alt="">
-                            <div class="overlay-p">
-                                <a href="images/sp/thi-toeic.jpg" data-gal="prettyPhoto">
-                                    <i class="fa fa-arrows-alt fa-2x"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 class="portfolio-title"><a href="#"></a></h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item">
-                        <div class="portfolio-thumb">
-                            <img src="images/sp/shopmobi.jpg" alt="">
-                            <div class="overlay-p">
-                                <a href="images/sp/shopmobi.jpg" data-gal="prettyPhoto">
-                                    <i class="fa fa-arrows-alt fa-2x"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 class="portfolio-title"><a href="#"></a></h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item">
-                        <div class="portfolio-thumb">
-                            <img src="images/sp/dai-han.jpg" alt="">
-                            <div class="overlay-p">
-                                <a href="images/sp/dai-han.jpg" data-gal="prettyPhoto">
-                                    <i class="fa fa-arrows-alt fa-2x"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 class="portfolio-title"><a href="#"></a></h3>
-                    </div>
-                </div>
-                <!--  row 3 -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item">
-                        <div class="portfolio-thumb">
-                            <img src="images/sp/bachyen.jpg" alt="">
-                            <div class="overlay-p">
-                                <a href="images/sp/bachyen.jpg" data-gal="prettyPhoto">
-                                    <i class="fa fa-arrows-alt fa-2x"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 class="portfolio-title"><a href="#"></a></h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item">
-                        <div class="portfolio-thumb">
-                            <img src="images/sp/tinchi.jpg" alt="">
-                            <div class="overlay-p">
-                                <a href="images/sp/tinchi.jpg" data-gal="prettyPhoto">
-                                    <i class="fa fa-arrows-alt fa-2x"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 class="portfolio-title"><a href="#"></a></h3>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="portfolio-item">
-                        <div class="portfolio-thumb">
-                            <img src="images/sp/ts.jpg" alt="">
-                            <div class="overlay-p">
-                                <a href="images/sp/ts.jpg" data-gal="prettyPhoto">
-                                    <i class="fa fa-arrows-alt fa-2x"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 class="portfolio-title"><a href="#"></a></h3>
-                    </div>
-                </div>
-                <!--  row 4 -->
-                <div class="row" id="panel">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="portfolio-item">
-                            <div class="portfolio-thumb">
-                                <img src="images/sp/van-tue-do.jpg" alt="">
-                                <div class="overlay-p">
-                                    <a href="images/sp/van-tue-do.jpg" data-gal="prettyPhoto">
-                                        <i class="fa fa-arrows-alt fa-2x"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <h3 class="portfolio-title"><a href="#"></a></h3>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="portfolio-item">
-                            <div class="portfolio-thumb">
-                                <img src="images/sp/fashion-dn.jpg" alt="">
-                                <div class="overlay-p">
-                                    <a href="images/sp/fashion-dn.jpg" data-gal="prettyPhoto">
-                                        <i class="fa fa-arrows-alt fa-2x"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <h3 class="portfolio-title"><a href="#"></a></h3>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="portfolio-item">
-                            <div class="portfolio-thumb">
-                                <img src="images/sp/aocuoi.jpg" alt="">
-                                <div class="overlay-p">
-                                    <a href="images/sp/aocuoi.jpg" data-gal="prettyPhoto">
-                                        <i class="fa fa-arrows-alt fa-2x"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <h3 class="portfolio-title"><a href="#"></a></h3>
-                        </div>
-                    </div>
-                </div>
-                <!--  row 5 -->
-                <div class="row" id="panel2">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="portfolio-item">
-                            <div class="portfolio-thumb">
-                                <img src="images/sp/tan-hoang-hao.jpg" alt="">
-                                <div class="overlay-p">
-                                    <a href="images/sp/tan-hoang-hao.jpg" data-gal="prettyPhoto">
-                                        <i class="fa fa-arrows-alt fa-2x"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <h3 class="portfolio-title"><a href="#"></a></h3>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="portfolio-item">
-                            <div class="portfolio-thumb">
-                                <img src="images/sp/noi-that.jpg" alt="">
-                                <div class="overlay-p">
-                                    <a href="images/sp/noi-that.jpg" data-gal="prettyPhoto">
-                                        <i class="fa fa-arrows-alt fa-2x"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <h3 class="portfolio-title"><a href="#"></a></h3>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="portfolio-item">
-                            <div class="portfolio-thumb">
-                                <img src="images/sp/yay-yay.jpg" alt="">
-                                <div class="overlay-p">
-                                    <a href="images/sp/yay-yay.jpg" data-gal="prettyPhoto">
-                                        <i class="fa fa-arrows-alt fa-2x"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <h3 class="portfolio-title"><a href="#"></a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="load-more pulse" id="flip"><a class="largeButton portfolioBgColor">Xem thêm</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /portfolio -->
-            <div id="contact" class="section-content fadeTop">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-title">
-                            <h2>Liên hệ</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <address class="map-contact">
-                            <table class="table contact">
-                                <thead>
-                                    <tr>
-                                        <td><i class="fa fa-map-marker"></i>Địa chỉ:</td>
-                                        <td>520/2 Tôn Đản - Cẩm Lệ - Tp. Đà Nẵng</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><i class="fa fa-mobile-phone"></i>Điện thoại:</td>
-                                        <td><a href="tel:01264664699"> +(84) 1264664699</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa fa-envelope"></i>Email: </td>
-                                        <td><a href="mailto:nguyenhuukhuyenudn@gmail.com">nguyenhuukhuyenudn@gmail.com</a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </address>
-                        <div class="map-holder">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3834.5368035781794!2d108.1821326!3d16.0376102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142197133e6459f%3A0xdb29ccfd8834dbba!2zNTIwIFTDtG4gxJDhuqNuLCBD4bqpbSBM4buHLCDEkMOgIE7hurVuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1448354817004"
-                                width="100%" height="345" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-md-6 hidden-sm hidden-xs">
-                        <div class="cal1"></div>
-                    </div>
-                </div>
-            </div>
-            <!-- /contact -->
-        </div>
-        <div class="site-footer">
-            <div class="first-footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="social-footer">
-                                <ul>
-                                    <li>
-                                        <a target="_blank" href="https://www.facebook.com/khuyennguyen95" class="fa fa-facebook"></a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://plus.google.com/u/0/+khuyennguyen95" class="fa fa-google-plus"></a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://www.flickr.com/photos/129833409@N08/" class="fa fa-flickr"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card-me hidden-xs">
-            <div class="popup">
-                <a href="#" class="close"><i class="fa fa-close"></i></a>
-                <div class="col-lg-5 col-md-5 col-sm-5">
-                    <img src="images/anh1.jpg" alt="">
-                </div>
-                <div class="col-lg-7 col-md-7 col-sm-7">
-                    <h5>Nguyễn Hữu Khuyên</h5>
-                    <h5>+(84) 1264664699</h5>
-                    <h5>nguyenhuukhuyenudn@gmail.com</h5>
-                    <h5>Cám ơn đã dành thời gian quan tâm đến CV của tôi!</h5>
-                    <h5>Chúc bạn một ngày mới nhiều trải nghiệm tốt đẹp</h5>
-                    <span class="socialShare"></span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- <div class="download-cv hidden-xs">
-        <a href="NguyenHuuKhuyen.rar" download title="Tải file word"><i class="fa fa-file-word-o fa-2x"></i></a>
-    </div> -->
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/jquery.singlePageNav.js"></script>
-    <script src="js/jquery.flexslider.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/share/plugin.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/time.js"></script>
-    <script src="calendar/underscore-min.js"></script>
-    <script src="calendar/moment.min.js"></script>
-    <script src="calendar/clndr.js"></script>
-    <script src="calendar/demo.js"></script>
-    <script type="text/javascript">
-        $("#flip a").click(function() {
-            var e = $(this).text();
-            "Xem thêm" === e ? $(this).text("Thu gọn") : $(this).text("Xem thêm");
-        })
-    </script>
+<body onload="startWeather();">
+	<div class="splash">
+		<div class="cs-loader">
+			<div class="cs-loader-inner">
+				<label>	●</label>
+				<label>	●</label>
+				<label>	●</label>
+				<label>	●</label>
+				<label>	●</label>
+				<label>	●</label>
+			</div>
+		</div>
+	</div>
+	<!-- Banner -->
+	<div id="banner_block"></div>
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<!-- Header -->
+		<div id="header_block"></div>
+		<!-- Main -->
+		<div id="main">
+		<!-- Post -->
+		<article class="post fadeTop">
+			<header>
+				<div class="title">
+					<h2><a href="ky-nang/gia-tri-cua-ban-la-gi.html">Giá trị của bạn là gì?</a></h2>
+					<p class="timePost">Posted by KhuyenNguyen on june 24, 2017</p>
+				</div>
+			</header>
+			<div class="description-post"><a href="ky-nang/gia-tri-cua-ban-la-gi.html"><img src="images/kn/kn_05.jpg" alt="Giá trị của bạn là gì?"></a>
+				<p>Hãy làm một cái gì đó có ích cho đời, bất cứ cái gì cũng được: viết một cái gì đó, sáng tác một bản nhạc nào đó, quay vlog nói về một vấn đề gì đó, học lập trình và lập trình ra một cái gì đó, thiết kế ra một cái gì đó, dịch một bài viết nào đó, làm ra một cái gì đó, bán một cái gì đó, chia sẻ một cái gì đó (hay ho), lập ra một nhóm nào đó, tham gia một hội nào đó… Khoan nghĩ đến tiền bạc, nó chắc chắn sẽ đến sau. Tiền bạc sẽ không bao giờ đến nếu bạn nghĩ đến nó trước, đó là lý do tại sao bạn cứ mãi không có tiền, vì bạn cứ nghĩ đến tiền, không có tiền thì bạn không làm.</p>
+				<p>Nhiều người vịn vào câu nói “Nếu bạn giỏi chuyện gì thì đừng làm nó miễn phí.” của nhân vật phản diện Joker trong bộ phim Người Dơi để lý lẽ, đây là một trong những câu nói thiếu sót và dễ gây hiểu lầm nhất mọi thời đại. Nó thiếu sót là ở chỗ trước khi được trả tiền thì người ta phải biết bạn là ai, bạn phải có một lịch sử, một quá trình trong quá khứ, quá trình đó phần nhiều là được dựng nên từ những việc bạn làm vì đam mê, làm không công, hoặc rất ít công, mình thấy không nhiều người hiểu được chuyện này</p>
+				<p>Thứ hai là trước khi bạn “giỏi” bạn phải trải qua một thời gian “chưa giỏi”, một thời gian rèn luyện, chứ không bao giờ tự nhiên đùng một cái bạn là thiên tài được, trừ khi bạn nằm trong số 0.001%, thời gian chưa giỏi này thì theo câu nói trên có nghĩa là chưa được trả tiền, hoặc trả tiền theo khả năng chưa giỏi của bạn (có nghĩa là không nhiều), chưa được trả tiền thì bạn không làm sao? không rèn luyện sao?</p>
+			</div>
+		</article>
+		<!-- Post -->
+		<article class="post fadeTop">
+			<header>
+				<div class="title">
+					<h2><a href="chuyen-cuoc-song/hoa-gao-va-chuyen-di-tuoi-tre.html">Hoa gạo và chuyến đi tuổi trẻ</a></h2> </div>
+			</header> <a href="chuyen-cuoc-song/hoa-gao-va-chuyen-di-tuoi-tre.html" class="image featured"><img src="images/ccs/ccs_07.jpg" alt="Hoa gạo và chuyến đi tuổi trẻ" /></a>
+			<div class="description-post">
+				<p>Chúng ta vừa bước qua rét nàng bân – đợt rét cuối cùng của tháng ba âm lịch. Tiết trời đã bắt đầu ấm lên rõ rệt mang lại một mùa hè nhiều sôi động và đầy những trải nghiệm. Nhân đây mình cũng xin tản mạn một chút về hoa gạo sau chuyến thăm Hải Phòng
+					của mình.</p>
+				<p> Gia đình mình là người Quảng Nam, những năm cuối thập niên 90 gia đình chuyển ra Hải Phòng để lập nghiệp, mình cũng theo ba mẹ ra đó và trưởng thành 15 năm trước khi về lại Đà Nẵng - nơi quê hương với những con người thân thiện và mảnh đất trẻ đầy
+					triển vọng.</p>
+				<p> Hè năm ngoái cũng đã hơn ba năm khi mình trở lại Hải Phòng để thăm những người bạn cũ. Tháng ba đi qua, nuối tiếc đi tìm những kỷ niệm thời học sinh, những người bạn đã cùng ta trưởng thành. Cũng là lúc mùa hoa gạo rụng, mơ mộng như để nhớ về hoài
+					niệm của thời thơ ấu đã qua không biết bao giờ tìm lại giữa chốn bận rộn, náo nhiệt ở thành phố này.</p>
+			</div>
+			<footer>
+				<ul class="actions">
+					<li><a href="chuyen-cuoc-song/hoa-gao-va-chuyen-di-tuoi-tre.html" class="button readMore">Keep reading</a></li>
+				</ul>
+				<ul class="stats">
+					<li><span class="icon fa-calendar">24/05/2017</span></li>
+				</ul>
+			</footer>
+		</article>
+		<!-- Post -->
+		<article class="post fadeTop">
+			<header>
+				<div class="title">
+					<h2><a href="chuyen-cuoc-song/rua-va-tho-chuyen-chua-ke-hay-nghe-lai-cuoc-dua-nay-tu-loi-cua-tho.html">Rùa và Thỏ: chuyện chưa kể - hãy nghe lại cuộc đua này từ lời của Thỏ</a></h2> </div>
+			</header> <a href="chuyen-cuoc-song/rua-va-tho-chuyen-chua-ke-hay-nghe-lai-cuoc-dua-nay-tu-loi-cua-tho.html" class="image featured"><img src="images/ccs/ccs_06.jpg" alt="Rùa và Thỏ: chuyện chưa kể - hãy nghe lại cuộc đua này từ lời của Thỏ" /></a>
+			<div class="description-post">
+				<p>Khi bạn đồng ý bỏ thêm một giờ đồng hồ để làm việc, nghĩa là bạn đã từ chối cơ hội ở bên gia đình, bạn đã nói KHÔNG với bạn bè, bạn đã bỏ qua cơ hội tập thể dục hay giải trí một mình.</p>
+				<p>Khi bạn nói CÓ với gia đình, đồng nghĩa với việc bạn sẽ hi sinh thời gian đi giao lưu cùng bè bạn, bỏ luôn công việc, bỏ luôn cả cơ hội để học tập nghiên cứu phát triển bản thân mình.</p>
+				<p>Một lời nói CÓ với cha mẹ, nghĩa là một lời nói KHÔNG với người yêu, sách vở, công việc và sở thích.</p>
+				<p>Hãy nghĩ lại xem, với mỗi lựa chọn, bạn đã đánh đổi và hi sinh nhiều như thế nào. Phải nói rằng, mỗi khi nghĩ đến những thứ mình đã từ bỏ để làm bất cứ điều gì, người viết lại cảm thấy nhói trong lòng: cái giá của mỗi giờ phút mà ta lựa chọn đều là quá lớn.</p>
+			</div>
+			<footer>
+				<ul class="actions">
+					<li><a href="chuyen-cuoc-song/rua-va-tho-chuyen-chua-ke-hay-nghe-lai-cuoc-dua-nay-tu-loi-cua-tho.html" class="button readMore">Keep reading</a></li>
+				</ul>
+				<ul class="stats">
+					<li><span class="icon fa-calendar">28/03/2017</span></li>
+				</ul>
+			</footer>
+		</article>
+		<!-- Post -->
+		<article class="post fadeTop">
+			<header>
+				<div class="title">
+					<h2><a href="chuyen-cuoc-song/mot-loi-noi-co-van-loi-noi-khong.html">Một lời nói CÓ, vạn lời nói KHÔNG</a></h2> </div>
+			</header> <a href="chuyen-cuoc-song/mot-loi-noi-co-van-loi-noi-khong.html" class="image featured"><img src="images/ccs/ccs_05.jpg" alt="Một lời nói CÓ, vạn lời nói KHÔNG" /></a>
+			<div class="description-post">
+				<p>Khi bạn đồng ý bỏ thêm một giờ đồng hồ để làm việc, nghĩa là bạn đã từ chối cơ hội ở bên gia đình, bạn đã nói KHÔNG với bạn bè, bạn đã bỏ qua cơ hội tập thể dục hay giải trí một mình.</p>
+				<p>Khi bạn nói CÓ với gia đình, đồng nghĩa với việc bạn sẽ hi sinh thời gian đi giao lưu cùng bè bạn, bỏ luôn công việc, bỏ luôn cả cơ hội để học tập nghiên cứu phát triển bản thân mình.</p>
+				<p>Một lời nói CÓ với cha mẹ, nghĩa là một lời nói KHÔNG với người yêu, sách vở, công việc và sở thích.</p>
+				<p>Hãy nghĩ lại xem, với mỗi lựa chọn, bạn đã đánh đổi và hi sinh nhiều như thế nào. Phải nói rằng, mỗi khi nghĩ đến những thứ mình đã từ bỏ để làm bất cứ điều gì, người viết lại cảm thấy nhói trong lòng: cái giá của mỗi giờ phút mà ta lựa chọn đều là quá lớn.</p>
+			</div>
+			<footer>
+				<ul class="actions">
+					<li><a href="chuyen-cuoc-song/mot-loi-noi-co-van-loi-noi-khong.html" class="button readMore">Keep reading</a></li>
+				</ul>
+				<ul class="stats">
+					<li><span class="icon fa-calendar">20/01/2017</span></li>
+				</ul>
+			</footer>
+		</article>
+		<!-- Post -->
+		<article class="post fadeTop">
+			<header>
+				<div class="title">
+					<h2><a href="chuyen-nghe-nghiep/front-end-developer-da-noi-gi-khien-khach-hang-bo-chay.html">Front-end Developer đã nói gì khiến khách hàng bỏ chạy?</a></h2> </div>
+			</header> <a href="chuyen-nghe-nghiep/front-end-developer-da-noi-gi-khien-khach-hang-bo-chay.html" class="image featured"><img src="images/cnn/cnn_03.png" alt="Front-end Developer đã nói gì khiến khách hàng bỏ chạy?" /></a>
+			<div class="description-post">
+				<p>Cuộc đối thoại được lén ghi lại, giữa một khách hàng và một Front End Developer. Có lẽ cuộc trò chuyện này sẽ kéo dài mãi mà không kết thúc nổi mất… Anh chàng trong câu chuyện này đã giơ tay bỏ chạy. Còn bạn, nếu là một tín đồ JavaScript, bạn nghĩ sao?</p>
+				<p><b>Câu chuyện bắt đầu...</b></p>
+				<hr>
+				<p><b>KHÁCH HÀNG (KH):</b> Hey, tôi có một project làm web, bản thân cũng theo nghề lập trình, nhưng thực lòng mà nói thì rất lâu rồi tôi chẳng đụng gì tới code web, và hình như công nghệ đã có khá nhiều thay đổi vài năm gần đây. Nghe đồn anh code web “ngon” lắm phải không?</p>
+				<p><b>DEVELOPER (Dev):</b> Để gọi cho đúng thì là tôi là Front End Developer, nhưng mà… okay, anh tìm đúng người rồi đấy! Hiệu ứng, giao diện, trình chơi nhạc, flying drones, bất kể gì anh muốn. Tôi cũng vừa trở về từ hội nghị chuyên đề về JavaScript và React, nên có thể nói tôi biết tất tần tật những công nghệ làm web app mới nhất, tính cho đến 2016.</p>
+			</div>
+			<footer>
+				<ul class="actions">
+					<li><a href="chuyen-nghe-nghiep/front-end-developer-da-noi-gi-khien-khach-hang-bo-chay.html" class="button readMore">Keep reading</a></li>
+				</ul>
+				<ul class="stats">
+					<li><span class="icon fa-calendar">20/01/2017</span></li>
+				</ul>
+			</footer>
+		</article>
+		<!-- Post -->
+		<article class="post fadeTop">
+			<header>
+				<div class="title">
+					<h2><a href="chuyen-cuoc-song/buc-thu-tam-biet-cuoc-song-cua-chang-trai-24-tuoi-chung-ta-lam-viec-nhu-mot-cai-may-chung-ta-chi-dang-co-gang-ton-tai.html">Bức thư tạm biệt cuộc sống của chàng trai 24 tuổi: Chúng ta làm việc như một cái máy, chúng ta chỉ đang cố gắng tồn tại...</a></h2> </div>
+			</header> <a href="chuyen-cuoc-song/buc-thu-tam-biet-cuoc-song-cua-chang-trai-24-tuoi-chung-ta-lam-viec-nhu-mot-cai-may-chung-ta-chi-dang-co-gang-ton-tai.html" class="image featured"><img src="images/ccs/ccs_03.jpg" alt="Bức thư tạm biệt cuộc sống của chàng trai 24 tuổi: Chúng ta làm việc như một cái máy, chúng ta chỉ đang cố gắng tồn tại..." /></a>
+			<div class="description-post">
+				<p>Đại đa số chúng ta hành động và làm việc ngày qua ngày như một cái máy, chúng ta chỉ đang cố gắng tồn tại chứ chẳng mấy người cố gắng sống, sống đúng cuộc sống của mình.</p>
+				<p>Tính cách của mỗi người, ý nghĩa tồn tại của mỗi người khác nhau ở chỗ chúng ta ngụp lặn thế nào trong dòng đời và chọn lựa những gì cho tới khi nào ta còn thở. Có thể bạn cho rằng những gì bạn đang làm mỗi ngày với cuộc sống của mình chẳng có gì đáng phải bàn cãi.</p>
+				<p>Hầu hết chúng ta hành động và làm việc ngày qua ngày như một cái “máy lái tự động”, không thực sự sống mà chỉ đơn thuần là tồn tại. Chúng ta ngồi trong văn phòng và đếm ngược đồng hồ cho đến giờ tan sở, về nhà, rồi hôm sau lại bắt đầu một ngày mới không khác ngày hôm trước.</p>
+			</div>
+			<footer>
+				<ul class="actions">
+					<li><a href="chuyen-cuoc-song/buc-thu-tam-biet-cuoc-song-cua-chang-trai-24-tuoi-chung-ta-lam-viec-nhu-mot-cai-may-chung-ta-chi-dang-co-gang-ton-tai.html" class="button readMore">Keep reading</a></li>
+				</ul>
+				<ul class="stats">
+					<li><span class="icon fa-calendar">18/01/2017</span></li>
+				</ul>
+			</footer>
+		</article>
+		<!-- Post -->
+		<article class="post fadeTop">
+			<header>
+				<div class="title">
+					<h2><a href="ky-nang/the-gioi-lap-trinh-web-hau-ie.html">Thế giới lập trình Web “hậu IE”</a></h2> </div>
+			</header> <a href="ky-nang/the-gioi-lap-trinh-web-hau-ie.html" class="image featured"><img src="images/kn/kn_04.jpg" alt="Một buổi phỏng vấn tuyển dụng nhân sự thú vị" /></a>
+			<div class="description-post">
+				<p>Quá trình đi đến quyết định liệu có nên ngưng hỗ trợ oldIE (các phiển bản IE từ 10 trở về trước, kể cả phiên bản 10) hay không sẽ không được đề cập trong bài viết. Nếu tính chất website hoặc ứng dụng của bạn buộc phải tiếp tục hỗ trợ oldIE… tôi rất
+					đồng cảm với bạn ^^. </p>
+				<p> Trong bài viết này, chúng ta sẽ tìm hiểu rất nhiều tính năng mới mà chúng ta có thể sử dụng không còn (bị oldIE) hạn chế.</p>
+				<p>Các tính năng này sẽ được chia thành 4 nhóm chính:</p>
+				<ol>
+					<li>Các tính năng và tính chất CSS</li>
+					<li>Các tính năng HTML5</li>
+					<li>Các tính năng JavaScript...</li>
+					<li>Còn lại.</li>
+				</ol>
+				<p>Để rút ngắn bài viết, ta sẽ chỉ bàn về các tính năng ít hỗ trợ cho oldIE, nhưng có thể được sử dụng an toàn với IE11 hoặc Microsoft Edge. Với bài viết này, ta sẽ nói về hai mục đầu tiên trước.</p>
+			</div>
+			<footer>
+				<ul class="actions">
+					<li><a href="ky-nang/the-gioi-lap-trinh-web-hau-ie.html" class="button readMore">Keep reading</a></li>
+				</ul>
+				<ul class="stats">
+					<li><span class="icon fa-calendar">10/01/2017</span></li>
+				</ul>
+			</footer>
+		</article>
+			<!-- Pagination -->
+			<ul class="actions pagination">
+				<li><a href="page-2.html" class="button big previous">Older posts</a></li>
+				<li><a href="/" class="disabled button big next">Newer posts</a></li>
+			</ul>
+		</div>
+		<!-- Sidebar -->
+		<div id="sidebar_block"></div>
+	</div>
+	<div class="footerEnd">
+		<div id="toTop"></div>
+		<h3>May mắn lớn nhất của cuộc đời, không phải nhặt được tiền, cũng không phải trúng số, mà là có người có thể dẫn bạn đi đến 1 nền tảng cao hơn.</h3>
+	</div>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.flatWeatherPlugin.min.js"></script>
+	<script src="assets/js/share.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/jquery.lazyload.min.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
+    <script>
+		// Weather widget
+		function startWeather() {
+		    var example = $("#weatherDanang").flatWeatherPlugin({
+		        location: "Danang",
+		        country: "Vietnam",
+		        api: "yahoo",
+		        displayCityNameOnly: false,
+		        // view: "today",
+		    });
+	    }
+	</script>
 </body>
 
 </html>

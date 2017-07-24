@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Kỹ năng</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<base href="http://localhost:3000/" />
+<link rel="icon" href="logo.ico" type="image/x-icon" />
+	<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="../assets/css/flatWeatherPlugin.css" />
+	<link rel="stylesheet" href="../assets/css/share.css" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif%3Aregular&subset=vietnamese&ver=4.8" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+</head>
+
+<body onload="startWeather();">
+	<!-- Banner -->
+	<div id="banner_block"></div>
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<!-- Header -->
+		<div id="header_block"></div>
+		<!-- Main -->
+		<div id="main">
+			<!-- breadcrumb -->
+			<nav>
+				<ul class="breadcrumb">
+					<li><a href="">Trang chủ</a></li>
+					<li><a href="ky-nang/">Kỹ năng</a></li>
+				</ul>
+			</nav>
+			<!-- Post -->
+			<article class="post fadeTop">
+				<header>
+					<div class="title titlePost">
+						<h2>Tôi đã hack "tơi tả" Lotte Cinema như thế nào?</h2>
+						<p class="timePost">Posted by KhuyenNguyen on December 24, 2016</p>
+					</div>
+				</header>
+				<div class="description-post"> <img src="images/kn/kn_02.jpg" alt="Tôi đã hack Lotte Cinema như thế nào">
+					<p>Làm một developer "có tâm", chúng ta không chỉ phải đảm bảo code chạy được, mà còn phải bảo đảm về bảo mật (với các hệ thống quan trọng). Có nhiều lúc, lỗi bảo mật đến từ chính sự ẩu tả của developer. Hôm nay mình
+						sẽ lôi trang web của Lotte Cinema ra làm mẫu để giải thích cho các bạn.</p>
+					<p>Lưu ý: Bài viết mang tính chất học thuật, bình luận về kĩ thuật. Mình không ủng hộ, cũng không chịu trách nhiệm nếu bạn mang kiến thức đề cập trong bài ra làm chuyện trái pháp luật! Thân.</p>
+					<h2>Giới thiệu</h2>
+					<p>Tại sao mình lại chọn Lotte Cinema? Đơn giản là cách đây mấy tháng, khi nhắc đến mật khẩu, mình đã nêu ra một lỗ hổng bảo mật khủng khiếp của Lotte Cinema: Lưu mật khẩu dưới dạng text.</p>
+					<p>Đến nay, lỗ hổng này vẫn chưa được sửa, điều này chứng tỏ hai chuyện: Đội ngũ lập trình web lotte cinema thiếu kiến thức cơ bản về lập trình và cũng không thèm quan tâm gì đến việc bảo trì sửa lỗi. Điều này đồng nghĩa
+						với việc website sẽ có nhiều lỗ hổng để khai thác.</p>
+					<p>Với logic đó, mình bắt đầu tìm lỗ hỗng của lotte với tâm thế học hỏi. Thật không ngờ, mình tìm được không chỉ một, mà đến tận vài lỗ hổng… cực kì chết người, có thể làm toàn bộ hệ thống ngừng hoạt động.</p>
+					<h2>Bắt đầu "câu cá"</h2>
+					<p>Đầu tiên, hãy nhìn góc trên bên trái trình duyệt. Một website không có https, đồng nghĩa với việc toàn bộ thông tin bạn điền vào (username, password) <b>hoàn toàn có thể bị hacker trộm</b> nếu bạn <b>dùng chung đường dây mạng/chung wifi</b>						với hacker đó (Xem thêm về <a href="https://congdd.wordpress.com/2013/05/01/sniffer-phuong-thuc-hoat-dong-cac-kieu-tan-cong-va-phong-chong/">sniffing</a>). Đó là lý do các trang ngân hàng, facebook, gmail, thanh toán điện từ đều đòi
+						hỏi phải dùng <i>https</i>.</p> <img src="images/kn/kn_02_02.jpg" alt="">
+					<p>Tiếp theo, ta bắt đầu với việc kiểm tra cookie. Các bạn tải addon <a href="https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg?hl=en">EditThisCookie</a> về để làm việc nhé. Thử đăng nhập và xem
+						lotte cinema lưu gì trong cookie nào.</p> <img src="images/kn/kn_02_03.jpg" alt="">
+					<p>Các bạn không nhìn lầm đâu, chính là <b>username</b> của các bạn đấy? Thôi, chúng ta cứ cầu trời là họ lưu username để nhắc bạn khi bạn cần đăng nhập lại thui hạ. Thử đổi sang giá trị khác rồi refresh trang xem nào.</p>
+					<img src="images/kn/kn_02_04.jpg" alt="">
+					<p>CÁI LỀ GÌ THỐN!!! Mình bị chuyển sang nick khác mất rồi. Thật không thể tin nổi. Một lỗi bảo mật to như bánh xe bò đã bị lộ chỉ sau 5p nghiên cứu. 1-0 cho Lotte Cinema. (Lỗi này có tên gọi là <a href="http://www.mysecurityawareness.com/article.php?article=390&title=impersonation-hacking-humans#.V7oALpgwiUk">impersonation</a>).</p>
+					<h2>Câu nhầm... "cá mập"</h2>
+					<p>Nhờ đổi cookie, mình đã hack được vào tài khoản người khác. Ok ngon, có thông tin người dùng luôn! Giờ mình thử đổi thông tin xem nào, được luôn. Thử đặt vé xem nào, cũng được nốt!</p> <img src="images/kn/kn_02_05.jpg" alt="">
+					<p>Có thể dụ dỗ Lotte Cinema gửi mật khẩu cho mình không nhỉ? Thử xem nào, đổi email của user này sang sang email mình, sau đó báo mất mật khẩu. Vào email xem sao?</p> <img src="images/kn/kn_02_06.jpg" alt="">
+					<p>Ồ, nhận được mật khẩu hiện tại luôn, mail của Lotte nhanh thật! Vì một user thường tái sử dụng mật khẩu ở nhiều trang, mình có thể thử dùng username và mật khẩu này ở một số trang khác để mò account. Thấy chết người chưa??</p>
+					<p>Thử đổi mật khẩu hiện tại xem, được luôn. Giờ mình đã có thể đăng nhập với mật khẩu mới đổi. Đây là lỗi thứ 2: Khi thay đổi mật khẩu, bắt buộc người dùng phải đổi mật khẩu cũ. Tỉ số giờ đã là 2 - 0 cho Lotte Cinema.</p>
+					<h2>Bonus thêm “cá voi”</h2>
+					<p>Hai lỗi trên <b>đã đủ làm tơi tả toàn bộ hệ thống</b>. Chỉ cần viết một con bot nho nhỏ, lần lượt thay giá trị membername trong cookie (<b>từ a tới zzzzzzz</b>) là có thể <b>lấy gần như toàn bộ thông tin khách hàng</b>, hoặc
+						đổi toàn bộ password làm người dùng không đăng nhập được. (Các bạn khác dùng username dài quá thì chịu).</p>
+					<p>Thế nhưng mọi chuyện chưa dừng ở đây. Mình tiếp tục thử nghiệm điền tiên vào khung “Họ tên”. Lotte tiếp tục lòi ra lỗi <a href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)">XSS</a> (Tấn công bằng cách chèn script vào
+						trang chính).</p> <img src="images/kn/kn_02_07.jpg" alt=""> <img src="images/kn/kn_02_08.jpg" alt="">
+					<p>Khá may mắn Lotte là đã cắt chuỗi thành 30 kí tự nên không thể điền JavaScript dài. Tuy nhiên, điều này vẫn không thể làm khó được mình khi viết file javascript ở nơi khác, sau đó embed script vào (Up file js lên dropbox rồi
+						lấy shortlink là xong).</p> <img src="images/kn/kn_02_09.jpg" alt=""> <img src="images/kn/kn_02_10.jpg" alt="">
+					<p>Lỗi XSS này chỉ hiện ra ở mỗi trang của user nên không thể dùng để deface website. Tuy nhiên, mình vẫn có thể <b>hiện pop-up giả mạo</b> người dùng tải virus như hình dưới. Dùng JS, mình có thể lấy số thẻ, số CMND để người dùng tin
+						tưởng rằng message là của lotte (Một phần do bọn lotte chỉ dùng alert để code cho nhanh nữa).</p> <img src="images/kn/kn_02_11.jpg" alt="">
+					<p>Kết hợp với con bot đã nói phía trên, mình hoàn toàn có thể <b>dụ dỗ rất nhiều người dùng Lotte</b> tải virus khi họ đăng nhập vào hệ thống. Không còn lời nào để nói, 3-0 cho Lotte Cinema!</p>
+					<h2>Kết luận</h2>
+					<p>Những lỗi bảo mật mình chỉ ra <b>không có gì cao siêu!</b> Do mình không phải dân chuyên về bảo mật nên những kĩ thuật tấn công của mình cũng chỉ dừng ở mức <b>vô cùng cơ bản</b>. Vấn đề của Lotte Cinema là ở chỗ họ "không biết tí
+						gì về bảo mật", dẫn đến chuyện <b>hệ thống bảo mật quá kém</b>.</p>
+					<p>Như các bạn đã thấy, hành vi này là sự thiếu tôn trọng khách hàng và còn có thể gây nguy hại cho người dùng. Tuy nhiên, có vẻ Lotte Cinema đã rất khôn ngoan trong khâu pháp lý khi rũ bỏ mọi trách nhiệm trong phần "Thỏa
+						thuận". Tuy thua 3-0 nhưng vẫn không phải chịu trách nhiệm gì, hoan hô Lotte Cinema.</p> <img src="images/kn/kn_02_12.jpg" alt="">
+					<p>Vì lý do đạo đức, mình đã gửi nội dung bài viết cho những người có trách nhiệm trên Lotte Cinema một khoảng thời gian khá lâu trước khi công bố. Tuy vậy, họ vẫn làm ngơ và không thèm quan tâm. RIP các bạn và các khách
+						hàng của Lotte Cinema. </p>
+					<p> Dù vậy, mình vẫn khuyên các bạn không nên thử phá hoại hệ thống. Mình không muốn ngày mai lên Mương 14 lại thấy tin: [Hacker trẻ tuổi bị Lotte Cinema bắt. “Tất cả là do em lỡ xem Tôi đi code dạo”] đâu. </p>
+					<p> Lời khuyên cuối cùng: các bạn vẫn có thể xem phim ở Lotte, nhưng <b>đừng điền bất kì thông tin cá nhân gì</b> vào cái hệ thống trời đánh của nó nhé! Thân chào.</p>
+					<blockquote> Thực hiện phân tích bởi blog Tôi đi code dạo </blockquote>
+				</div>
+			</article>
+		</div>
+		<!-- Sidebar -->
+		<div id="sidebar_block"></div>
+	</div>
+	<div class="footerEnd">
+		<div id="toTop"></div>
+		<h3>May mắn lớn nhất của cuộc đời, không phải nhặt được tiền, cũng không phải trúng số, mà là có người có thể dẫn bạn đi đến 1 nền tảng cao hơn.</h3> </div>
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jquery.flatWeatherPlugin.min.js"></script>
+	<script src="../assets/js/share.js"></script>
+	<script src="../assets/js/skel.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/jquery.lazyload.min.js"></script>
+	<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="../assets/js/main.js"></script>
+	<script>
+		// Weather widget
+		function startWeather() {
+			var example = $("#weatherDanang").flatWeatherPlugin({
+				location: "Danang",
+				country: "Vietnam",
+				api: "yahoo",
+				displayCityNameOnly: false,
+				// view: "today",
+			});
+		}
+	</script>
+</body>
+
+</html>

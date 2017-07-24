@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Kỹ năng</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<base href="http://localhost:3000/" />
+<link rel="icon" href="logo.ico" type="image/x-icon" />
+	<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+	<link rel="stylesheet" href="../assets/css/flatWeatherPlugin.css" />
+	<link rel="stylesheet" href="../assets/css/share.css" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif%3Aregular&subset=vietnamese&ver=4.8" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+</head>
+
+<body onload="startWeather();">
+	<!-- Banner -->
+	<div id="banner_block"></div>
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<!-- Header -->
+		<div id="header_block"></div>
+		<!-- Main -->
+		<div id="main">
+			<!-- breadcrumb -->
+			<nav>
+				<ul class="breadcrumb">
+					<li><a href="">Trang chủ</a></li>
+					<li><a href="ky-nang/">Kỹ năng</a></li>
+				</ul>
+			</nav>
+			<!-- Post -->
+			<article class="post fadeTop">
+				<header>
+					<div class="title titlePost">
+						<h2>Các code style gây tranh cãi trong lập trình</h2>
+						<p class="timePost">Posted by KhuyenNguyen on December 24, 2016</p>
+					</div>
+				</header>
+				<div class="description-post">
+					<h2>Xài Tab hay 4 spaces</h2>
+					<p>Trước hết hãy nói cho mình biết khi lập trình bạn dùng gì để thụt đầu dòng (indent). Có người thích dùng tab, người khác lại dùng 4 dấu space để thụt dòng. Vậy vì sao lại xảy ra tình trạng tranh cãi, ai thích dùng gì thì dùng chứ. Đó là vì có ý kiến
+						cho rằng dùng 4 space mới là code chuẩn, còn dùng tab thì không. Vậy sự thật ở đây là gì? Nên dùng 4 spaces hay dùng tab?</p> <img src="images/kn/kn_03.png" alt="Các code style gây tranh cãi trong lập trình">
+					<p>Theo như mình tìm hiểu thì không phải lúc nào 1 tab cũng bằng 4 spaces, đặc biệt là trên những code editor khác nhau, trên những font chữ khác nhau và trên những dòng code dài ngắn khác nhau. Và không gì làm bạn tức điên hơn khi nhận một source từ
+						người khác mà chưa format chuyển từ tab sang space, lúc đó code sẽ nhảy indent loạn xạ cả lên. Nếu làm việc một mình thì không sao nhưng nếu làm theo nhóm thì có lẽ bạn sẽ bị người khác phàn nàn vì chưa format theo space.</p>
+					<p> Dùng 4 spaces thì chậm hơn vì phải gõ tới 4 lần nhưng sẽ đọc được chuẩn code trên các editor. 1 space sẽ vẫn mãi là 1 cột trong khi 1 tab không phải lúc nào cũng hiển thị là 4 cột trong các editor khác nhau. Vì vậy không phải bình thường mà người
+						ta đưa nó vào code style PSR-2.</p>
+					<blockquote> “Code MUST use an indent of 4 spaces, and MUST NOT use tabs for indenting.</blockquote>
+					<p>N.b: Using only spaces, and not mixing spaces with tabs, helps to avoid problems with <b>diffs, patches, history, and annotations</b>. The use of spaces also makes it easy to insert fine-grained sub-indentation for inter-line alignment.”</p>
+					<p>
+					Thật ra đây không hẳn là tranh cãi mà đúng hơn là sự nhầm lẫn và sự lười biếng trong giới lập trình hiện nay. </p>
+					<p> Vì vậy nhiều editor đã có hỗ trợ chuyển đổi từ tab sang spaces, có cái còn hỗ trợ tự động khi tab là sẽ chuyển luôn không cần chuyển bằng tay. Mình đang dùng phpStorm!</p>
+					<h2>2. CamelCase hay snake_case</h2>
+					<p>Đây là code style thứ hai gây tranh cãi nhiều nhất trong giới lập trình phải không?</p> <img src="images/kn/kn_03_02.jpg" alt="Các code style gây tranh cãi trong lập trình">
+					<p>CamelCase là gì? Đó là kiểu viết code theo dạng lạc đà (u bướu) mà chắc ai cũng dễ dàng nhận ra khi mới bắt đầu học code. Các chữ cái đầu từ đều được viết hoa. Đó cũng là kiểu mình dùng để viết khi mới học code thời còn ngồi trên ghế nhà trường.</p>
+					<p>Ví dụ: <code>$limitCount</code><code>$myFirstVariable</code><code>$lastName</code></p>
+					<p><b>snake_case là gì?</b> Snake case hay còn gọi là underscore case, là cách viết code dùng dấu gạch dưới để phân cách các từ, tất cả từ đều được viết thường.</p>
+					<p> Ví dụ: <code>$is_die_link</code><code>$my_angel</code><code>$lego_is_my_life</code></p>
+					<p> Vậy thì phong cách nào là tốt nhất?</p>
+					<p><b>Vòng 1: Ý kiến</b></p>
+					<p><b>Phe phái cuồng Camel Case</b></p>
+					<ul>
+						<li>CamelCase dễ gõ hơn và gạch chân rất khó gõ vì phải Shift + _</li>
+						<li>CamelCase chiếm ít không gian hơn (rõ ràng là nó ngắn hơn).</li>
+					</ul>
+					<p><b>Phe phái cuồng snake_case</b></p>
+					<ul>
+						<li>snake_case là cách viết tự nhiên và do đó sẽ dễ đọc hơn. Phân cách đơn giản chỉ bằng dấu gạch dưới. <i>isIllicitIgloo</i> khó đọc hơn <i>is_illicit_igloo</i> rất nhiều</li>
+						<li>Khi đặt tên hằng thì nhất quán hơn là dùng Camel case. <i>THIS_IS_A_CONSTANT</i> thì dễ đọc và dễ hiểu hơn <i>thisIsAConstant</i> quá nhiều.</li>
+						<li>Dễ dàng viết hoa các chữ viết tắt. Ví dụ: <i>TCP_IP_connection</i> đẹp và đúng đắn hơn <i>tcpIpConnection</i>.</li>
+					</ul>
+					<p><b>Vòng 2: Phản biện</b></p>
+					<p><b>Anti fan của Camel Case</b></p>
+					<ul>
+						<li>snake_case đem lại những khoảng không gian cần thiết để phân biệt được các từ cấu tạo nên biến, hàm trong code.</li>
+					</ul>
+					<p><b>Anti fan của snake_case</b></p>
+					<ul>
+						<li>snake_case quá xấu, CamelCase nhìn thanh lịch hơn hẳn.</li>
+						<li>Lạc đà thì lúc nào cũng hiền lành và có ích hơn rắn (lầy vậy luôn).</li>
+					</ul>
+					<p><b>Vòng 3: Ý kiến riêng của mình</b></p>
+					<p>Haha... tùy theo dự án. Mình sẽ apply mỗi style vào project của mình cho phù hợp với <a href="https://github.com/huukhuyen/conventions">convention</a>.</p>
+					<ul>
+						<li>Thông thường mình code 4 space <i>"1 tab"</i>.</li>
+						<li>Với "HTML, CSS " mình thường đặt theo kiểu snake_case.</li>
+						<li>Với "javaScript, PHP... những ngôn ngữ server side" mình thường đặt theo kiểu camelCase.</li>
+					</ul>
+					<p><b>3. Vị trí dấu ngoặc nhọn</b></p>
+					<p>Mấy chế thường đặt dấu ngoặc nhọn ở vị trí nào? Trên dòng hay xuống dòng</p> <pre>
+
+// Kiểu 1: same line formatting
+
+class Car() {
+    // Do something
+}
+					</pre>
+					<p>hay</p> <pre>// Kiểu 2: next line formatting
+
+class Car ()
+{
+    // Do something
+}
+					</pre>
+					<p>Same line formatting:</p>
+					<ul>
+						<li>Dễ đọc hơn vì chỉ cách nhau có 1 khoảng trắng giữa dấu mở ngoặc và đối tượng phía trước</li>
+						<li>Gọn gàng hơn, không làm phình to số dòng</li>
+						<li>Dễ dàng phân biệt và tìm dấu ngoặc đóng</li>
+					</ul>
+					<p>Next line formatting:</p>
+					<ul>
+						<li>Cũng khá dễ đọc nhưng sẽ làm phình to số dòng code</li>
+						<li>Ngược lại, nó dễ dàng tìm dấu ngoặc đóng và cả hai đều cùng 1 vị trí</li>
+					</ul>
+					<p>Thời đi học mình thường dùng kiểu 2 vì code rõ ràng và đối xứng dấu ngoặc hơn.</p>
+					<p>Nhưng khi đi làm, đa số dự án các convention đề dùng kiểu <i>same line formatting</i> nên hình thành thói quen. Còn bạn thì sao?</p>
+					<blockquote>Tham khảo từ blog: JUSFUNNY – BETTER DEVELOPER</blockquote>
+				</div>
+			</article>
+		</div>
+		<!-- Sidebar -->
+		<div id="sidebar_block"></div>
+	</div>
+	<div class="footerEnd">
+		<div id="toTop"></div>
+		<h3>May mắn lớn nhất của cuộc đời, không phải nhặt được tiền, cũng không phải trúng số, mà là có người có thể dẫn bạn đi đến 1 nền tảng cao hơn.</h3> </div>
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+	<script src="../assets/js/jquery.flatWeatherPlugin.min.js"></script>
+	<script src="../assets/js/share.js"></script>
+	<script src="../assets/js/skel.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/jquery.lazyload.min.js"></script>
+	<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="../assets/js/main.js"></script>
+	<script>
+		// Weather widget
+		function startWeather() {
+			var example = $("#weatherDanang").flatWeatherPlugin({
+				location: "Danang",
+				country: "Vietnam",
+				api: "yahoo",
+				displayCityNameOnly: false,
+				// view: "today",
+			});
+		}
+	</script>
+</body>
+
+</html>

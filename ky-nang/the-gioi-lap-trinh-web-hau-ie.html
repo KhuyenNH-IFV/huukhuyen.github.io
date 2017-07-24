@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Kỹ năng</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<base href="http://localhost:3000/" />
+	<link rel="icon" href="logo.ico" type="image/x-icon" />
+	<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="../assets/css/flatWeatherPlugin.css" />
+	<link rel="stylesheet" href="../assets/css/share.css" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif%3Aregular&subset=vietnamese&ver=4.8" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+</head>
+
+<body onload="startWeather();">
+	<!-- Banner -->
+	<div id="banner_block"></div>
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<!-- Header -->
+		<div id="header_block"></div>
+		<!-- Main -->
+		<div id="main">
+			<!-- breadcrumb -->
+			<nav>
+				<ul class="breadcrumb">
+					<li><a href="">Trang chủ</a></li>
+					<li><a href="ky-nang/">Kỹ năng</a></li>
+				</ul>
+			</nav>
+			<!-- Post -->
+			<article class="post fadeTop">
+				<header>
+					<div class="title titlePost">
+						<h2>Thế giới lập trình Web “hậu IE”</h2>
+						<p class="timePost">Posted by KhuyenNguyen on January 10, 2017</p>
+					</div>
+				</header>
+				<div class="description-post"> <img src="images/kn/kn_04.jpg" alt="Thế giới lập trình Web “hậu IE”">
+					<p>Quá trình đi đến quyết định liệu có nên ngưng hỗ trợ oldIE (các phiển bản IE từ 10 trở về trước, kể cả phiên bản 10) hay không sẽ không được đề cập trong bài viết. Nếu tính chất website hoặc ứng dụng của bạn buộc phải tiếp tục hỗ trợ oldIE… tôi rất
+						đồng cảm với bạn ^^. </p>
+					<p> Trong bài viết này, chúng ta sẽ tìm hiểu rất nhiều tính năng mới mà chúng ta có thể sử dụng không còn (bị oldIE) hạn chế.</p>
+					<p>Các tính năng này sẽ được chia thành 4 nhóm chính:</p>
+					<ol>
+						<li>Các tính năng và tính chất CSS</li>
+						<li>Các tính năng HTML5</li>
+						<li>Các tính năng JavaScript...</li>
+						<li>Còn lại.</li>
+					</ol>
+					<p>Để rút ngắn bài viết, ta sẽ chỉ bàn về các tính năng ít hỗ trợ cho oldIE, nhưng có thể được sử dụng an toàn với IE11 hoặc Microsoft Edge. Với bài viết này, ta sẽ nói về hai mục đầu tiên trước.</p>
+					<h2>1. Các tính năng và tính chất CSS hiện tại</h2>
+					<p><b>Flexbox</b></p>
+					<p>Flexbox là bước thứ 3 trong quá trình tạo web layout, sau table và float. Foundation 6 hiện đã có <a href="http://foundation.zurb.com/sites/docs/flex-grid.html">Flexbox alternate grid</a> và Bootstrap 4 trong tương lai sẽ tích hợp <a href="http://v4-alpha.getbootstrap.com/getting-started/flexbox/">tính năng tương tự</a>.
+						Vẫn còn nhiều grid nhỏ dựa trên Flexbox, như sGrid.</p>
+					<p>Vẫn còn nhiều <a href="http://caniuse.com/#search=flexbox">vấn đề</a>, và bug (đặc biệt khi chạy trên IE11), nhưng với tài liệu chi tiết rõ ràng, ta có thể từ đó tìm được cách khắc phục. Dưới đây là một số tài liệu giúp bạn làm quen với Flexbox:</p>
+					<ol>
+						<li><a href="http://www.sitepoint.com/migrating-flexbox-cutting-mustard/">Migrating to Flexbox by Cutting the Mustard</a></li>
+						<li><a href="http://www.sitepoint.com/a-primer-on-using-flexbox-with-compass/">A Primer on Using Flexbox with Compass</a></li>
+						<li><a href="http://flexboxfroggy.com/">Flexbox Froggy – A game for learning CSS flexbox</a></li>
+					</ol>
+					<p><b>CSS Gradients</b></p>
+					<p>CSS gradients cho phép bạn tạo hiệu ứng chuyển đổi trơn mượt giữa hai hoặc nhiều màu sắc cụ thể. Với một chút sáng tạo, các bạn còn có thể tạo pattern repeat được như background-image. Ta không cần phải cắt ảnh cho background, button hay bất cứ yếu
+						tố UI nào khác; chỉ việc quăng gradient vào đúng chỗ là xong. Nếu bạn chưa biết về CSS Gradient, dưới đây là một vài địa chỉ hữu ích:</p>
+					<p><b>CSS Animations</b></p>
+					<p>Flash hay JavaScript đã tường thống trị animation trên web trong một khoản thời gian rất dài. Cho đến khi CSS3 xuất hiện với Animation Module. Khi Flash dần dần mất đi vị thế của mình, CSS animation nổi lên với lợi thế lớn so với Favascript animation:
+						CSS animation thực thi trên một thread khác, mà không chặn các script còn lại của trang.</p>
+					<p>Không phải tính chất nào cũng chuyển thành animation được, và một số tính chất yêu cầu khả năng xử lý khác nhau. Các trình duyệt hiện nay góp phần cải thiện được trình trạng này với hardware acceleration (tăng tốc phần cứng). Nếu bạn tinh chỉnh hardware
+						acceleration đúng cách, CSS animation có thể chạy rất mượt mà (60 fps trở lên). Sau đây là một số bài viết về tinh chỉnh CSS animation:</p>
+					<ol>
+						<li><a href="http://www.sitepoint.com/introduction-to-hardware-acceleration-css-animations/">An Introduction to Hardware Acceleration with CSS Animations</a></li>
+						<li><a href="http://www.sitepoint.com/animation-advice-from-a-css-master/">Animation Advice from a CSS Master</a></li>
+						<li><a href="http://www.sitepoint.com/syncing-css-animations-with-html5-audio/">Syncing CSS Animations with HTML5 Audio</a></li>
+					</ol>
+					<p><b>2D/3D transforms and transitions</b></p>
+					<p>Transform và transition là hai tính năng nền tảng của CSS animation. Nếu chú ý, ta có thể làm được những thứ mà trước đây chỉ Flash làm được. Tuy đây không phải là kỹ thuật animation hiện đại duy nhất (ta còn có SVG, Canvas và nhiều kỹ thuật JavaScript
+						khác), nhưng lại là kỹ thuật dễ học, dễ dùng, và dễ duy trì nhất. Bạn có thể tìm đọc một số bài viết trên SitePoint giúp bạn làm quen với kỹ thuật này:</p>
+					<ol>
+						<li><a href="http://www.sitepoint.com/css3-transitions-101/">Craig Buckler’s series on CSS3 Transitions</a></li>
+						<li><a href="http://www.sitepoint.com/the-definitive-guide-to-css-transitions/">A Primer on CSS3 Transforms</a></li>
+						<li><a href="http://www.sitepoint.com/the-definitive-guide-to-css-transitions/">The Definitive Guide to CSS Transitions</a></li>
+					</ol>
+					<p><b>Border image</b></p>
+					<p>Khi thay đổi hình ảnh của border, ta thường dùng các tùy chỉnh có trong tính chất border-style. Khi còn ở “thời oldIE”, cách duy nhất để thêm yếu tố trang trí cầu kỳ (như custom border) là dùng các cấu trúc markup phức tạp và ảnh cắt nhỏ. Hiện nay,
+						ta đã có thể thoải mái sử dụng một tính năng khác dựa theo tính chất border-image. Kỹ thuật này cho phép bạn chọn một hình ảnh, cắt nhỏ ra, và sử dụng các mảnh đó để tạo border. Không khác lắm so với phương pháp cũ, nhưng ta chỉ sử dụng một ảnh,
+						và có thể tránh được markup rối rắm.</p>
+					<p>Một số bài viết bên dưới có đầy đủ thông tin về border-image:</p>
+					<ol>
+						<li><a href="http://www.sitepoint.com/decorating-the-web-with-css-border-images/">Decorating the Web with CSS Border Images</a></li>
+						<li><a href="http://www.sitepoint.com/css3-border-image/">CSS3 Border-Image</a></li>
+						<li><a href="http://www.sitepoint.com/css3-border-images/">CSS3 Border Images for Beautiful, Flexible Boxes</a></li>
+					</ol>
+					<p><b>Multi-column layout</b></p>
+					<p>Trước sự phát triển ồ ạt của báo mạng, báo giấy vẫn giữ được nét hấp dẫn riêng, và một nét hấp dẫn trong đó là bố cục được cắt gọt tỉ mỉ, thường chia thành nhiều cột. Và trong một thời gian dài, các phương tiện số vẫn luôn cố gắng tái hiện lại bố cục này. Ngày nay, ta đã gặt hái được một số thành công ban đầu, ta đã có thể tận dụng khả năng sắp xếp nội dung thành nhiều cột. Nếu bạn chưa biết bắt đầu từ đâu, bạn có thể đọc:</p>
+					<ol>
+						<li><a href="http://www.sitepoint.com/css3-columns-and-paged-reflowable-content/">CSS3 Columns and Paged Reflowable Content</a></li>
+						<li><a href="https://css-tricks.com/guide-responsive-friendly-css-columns/">Guide to Responsive-Friendly CSS Columns (CSS Tricks)</a></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns/Using_multi-column_layouts">Using CSS multi-column layouts (MDN)</a></li>
+					</ol>
+					<p><b>Đơn vị rem và viewport</b></p>
+					<p>Có rất nhiều đơn vị (đo) trong CSS, đa số lập trình viên thường quen thuộc với pixel và ems hơn. Khi không còn phải để ý đến oldIE nữa, ta giờ đây có thể tận dụng nhiều loại đơn vị hơn, đặc biệt là rem và viewpoint. Các bạn có thể tìm hiểu kỹ hơn ở đây:</p>
+					<ol>
+						<li><a href="http://www.sitepoint.com/look-at-length-units-in-css/">A Look at Length Units in CSS</a></li>
+						<li><a href="http://www.sitepoint.com/understanding-and-using-rem-units-in-css/">Understanding and Using rem Units in CSS</a></li>
+					</ol>
+					<p><b>Pointer events</b></p>
+					<p>Trước đây, JavaScript và công cụ duy nhất giúp ta thêm yếu tố tương tác vào web (bên cạnh link và button). Mọi thứ đã thay đổi từ khi pointer event phổ biến rộng rãi. Tuy ban đầu “ăn nằm” với SVG, pointer events cho phép lập trình viên xác định liệu/khi yếu tố đồ họa có phản ứng với mouse event (hay không). Từ đây ta có thể có nhiều ứng dụng thú vị, như <a href="http://blogs.sitepointstatic.com/examples/tech/css3-pointer-events/index.html">kính viễn vọng từ Sao Hỏa nhìn xuống Thế Vận Hội London</a>. Đội ngũ ở Microsoft cũng sử dụng pointer event để thống nhất các kiểu tương tác, qua chạm, chuột, bút cảm ứng hay bút đồ họa. Với pointer event, ta còn có thể làm nhiều hơn thế:</p>
+					<ol>
+						<li><a href="http://www.sitepoint.com/css3-pointer-events/">CSS3 Gems: The pointer-events Property</a></li>
+						<li><a href="http://www.sitepoint.com/pointer-events-will-make-cross-browsers-touch-support-easy/">How Pointer Events Will Make Cross-Browser Touch Support Easy</a></li>
+						<li><a href="http://www.sitepoint.com/unifying-touch-and-mouse-with-pointer-events/">Unifying Touch and Mouse with Pointer Events</a></li>
+					</ol>
+					<p><b>SVG Filters</b></p>
+					<p>Tuy có rất nhiều bước tiến với Web, cùng nhiều font và kỹ thuật mới với hình ảnh, chúng ta vẫn tìm đến graphics editor khi ta cần những hiệu ứng cầu kỳ. Những hiệu ứng như Color blending, text effects, masking,… vẫn bắt ta tìm đến một designer lành nghề.</p>
+					<p>Và mọi thứ đã thay đổi khi hầu hết trình duyệt hiện nay đã hỗ trợ tính năng svg-filters cho phép bạn tạo các hiệu ứng mà trước đây phải cần đến image editor. Tất nhiên tính năng này chưa thể thay thế hoàn toàn Photoshop, nhưng cũng sắp đến ngày đó rồi. Bạn không tin ư? Xem thử bản demo GitHub này nhé: <a href="http://jorgeatgu.github.io/svg-filters/">FILDROP – SVG Filters</a>.</p>
+					<p>Một số bài viết hay về SVG Filter: <a href="https://www.smashingmagazine.com/2015/05/why-the-svg-filter-is-awesome/">why SVG filters are awesome</a>/ <a href="https://developer.mozilla.org/en/docs/Applying_SVG_effects_to_HTML_content">applying SVG effects to HTML content</a>/ <a href="https://sarasoueidan.com/articles/index.html">mistress of SVG herself, Sara Soueidan</a>.</p>
+					<h2>2. Tính năng HTML5</h2>
+					<p>Không dừng lại ở các nhóm tag và attribute mới, HTML5 còn cho phép trình duyệt thực hiện nhiều hành vi mà không còn cần đến JavaScript hay các phương pháp script khác.</p>
+					<p><b>Autofocus</b></p>
+					<p>Attribute này tập trung vào trong input. Hãy tưởng tượng bạn có thể type trực tiếp ngay khi bạn vào Google search page. Nếu bạn không muốn tích hợp fallback với JavaScript, bạn phải dùng event DOM ready thay vì window.load. Nhảy ngay đến ô nhập liệu (và thậm chí là hiện bàn phím ảo) khi người dùng bắt đầu tương tác với nội dung trang không phải là một ý hay.</p>
+					<p>Một số thông tin hữu ích:</p>
+					<ol>
+						<li><a href="http://www.sitepoint.com/6-nifty-time-saving-html-attributes/">6 Nifty, Time-Saving HTML Attributes</a></li>
+						<li><a href="http://www.sitepoint.com/html5-forms/">HTML5 and Even Fancier Forms</a></li>
+						<li><a href="http://www.html5tutorial.info/html5-autofocus.php">Input Attr : Autofocus (HTML5Tutorial.info)</a></li>
+					</ol>
+					<p><b>classList (DOMTokenList)</b></p>
+					<p>Thao tác với class trên một DOM element là ý tưởng không mới. jQuery support rất mạnh những thao tác này, đánh đổi bằng việc phải mang cả thư viện theo. Native support cho DOMTokenList cho phép bạn thực hiện thao tác tương tự nhanh và hiệu quả hơn. DOMTokenList vẫn chưa hoàn toàn hỗ trợ IE11, nhưng ta vẫn hoàn toàn có thể tìm hiểu chức năng hay ho này:</p>
+					<ol>
+						<li><a href="http://www.sitepoint.com/exploring-classlist-api/">Exploring the classList API</a></li>
+						<li><a href="http://html5doctor.com/the-classlist-api/"></a>The classList API (HTML5Doctor)</li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList"></a>Element.classList (MDN)</li>
+					</ol>
+					<p><b>Dataset & data-* attributes</b></p>
+					<p><b></b></p>
+					<p>Lập trình viên trước giờ đã luôn lưu trữ dữ liệu trong markup, bắt đầu với custom class name, theo sau là các attribute <code>data-*</code>. jQuerry, với hàm <a href="https://api.jquery.com/data/">.data()</a>, là công cụ hữu ích trên phương diện này. Trong tường hợp của chúng ta, bạn có thể bỏ qua jQuery hoàn toàn và sử dụng luôn native support để trực tiếp xử lý attribute <code>data-*</code>.</p>
+					<p>Một số bài biết hay về <code>dataset</code> và <code>data-*</code>:</p>
+					<ol>
+						<li><a href="http://www.sitepoint.com/managing-custom-data-html5-dataset-api/">Managing Custom Data with the HTML5 Dataset API</a></li>
+						<li><a href="http://www.sitepoint.com/use-html5-data-attributes/">How to Use HTML5 Data Attributes</a></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes">Using data attributes (MDN)</a></li>
+					</ol>
+					<p><b>Các kiểu Email, telephone và URL input</b></p>
+					<p>Form validation là vấn đề làm mọi lập trình viên đau đầu. Bạn đã bao nhiêu lần lên internet tìm kiếm regular expression để xác thực emails? May thay, HTML5 Constraint API, cùng với các loại nhập liệu email, telephone hay URL, có thể giải quyết vấn đề không cần đến JavaScript. Dưới đây là một vài ví dụ:</p>
+					<ol>
+						<li><a href="http://www.sitepoint.com/using-the-html5-constraint-api-for-form-validation/">Using the HTML5 Constraint API for Form Validation</a></li>
+						<li><a href="http://www.sitepoint.com/html5-form-validation/">HTML5 Form Validation</a></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Data_form_validation">Data form validation (MDN)</a></li>
+					</ol>
+					<h2>Nhiều attribute mới cóng: hidden, placeholder, spellcheck, pattern</h2>
+					<p>HTML5 mang đến nhiều attribute hữu ích với native support cho một số kỹ thuật vốn chỉ tích hợp khi dùng JavaScript. Các attribute này mở rộng tính năng của trường nhập liệu, cải thiện khả năng sử dụng và quá trình xác nhận.</p>
+					<ol>
+						<li><b>“Hidden” attribute</b> – thực chất là một nhánh của CSS, vận hành giống y như display: none; có thể bị ghi đè với CSS khi sử dụng display property và có thể áp dụng với bất cứ phần tử HTML nào.</li>
+						<li><b>“Pattern” attribute</b> –  xác nhận tự động không thể chuẩn hóa với một số trường. Hãy xét <code>&lt;input type="tel"></code>.  Format số điện thoại không giống nhau ở các nước nên ta không thể đặt chuẩn xác nhận chung được. Đây là lúc ta cần đến pattern attribute. Bạn có thể lựa chọn một regular expression làm giá trị và browser sẽ dùng nó để xác nhận user input. Bạn có thể tìm hiểu thêm về pattern tại <a href="http://html5pattern.com/">HTML5Pattern</a>.</li>
+						<li><b>“Placeholder” attribute</b> – placeholder attribute hiển thị gợi ý ngắn miêu tả giá trị mong đợi của một trường nhập liệu. Một số người còn dùng attribute này để thay cho label, và điều này gây ra vấn đề – khi số lượng trường nhập liệu quá cao, placeholder sẽ biến mất. Thêm vào việc thiếu label nữa, ta sẽ thấy rất rối. Khi được sủ dụng đúng cách, placeholder sẽ giúp người dùng rất nhiều.</li>
+						<li><b>“Spellcheck” attribute</b> – Chắc hẳn ta hay thấy một số textarea tự động sửa chính tả lên văn bản mà ta viết. Đa số lập trình viên không biết rằng ta có thể bật hoặc tắt và thậm chí áp dụng tính năng này lên trường nhập liệu văn bản bình thường. Tại sao ta phải làm điều đó? Bởi ta sẽ muốn kiểm tra chính tả querry của trường tìm kiếm, hoặc vô hiệu hóa chức năng khi textarea dùng để nhập code,… Để biết thêm chi tiết, bạn có thể xem thử bài viết sau trên Mozilla Developer Network — <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Controlling_spell_checking_in_HTML_forms">Controlling spell checking in HTML forms</a>.</li>
+					</ol>
+					<h2>Các yếu tố ngữ nghĩa mới trong HTML5</h2>
+					<p>Các yếu tố ngữ nghĩa trong HTML5 liên quan chặt chẽ đến khả năng xử lý của nội dung web, với hai trường chính được lợi nhiều nhất: trước nhất là indexing và search engines, tiếp theo là công nghệ hỗ trợ.</p>
+					<p><b>PNG favicons</b></p>
+					<p>Năm 1999, Internet Explore 5 giới thiệu một tính năng mang tên favicon – một hình ảnh bé tí đặt cạnh URL của trang web trên thanh địa chỉ, trong bookmark list và, gần đây nhất, trên tab của web. Format .ico cũ kỹ tuy vẫn còn rất linh hoạt (file có thể chứa nhiều format ảnh ở 16×16, 32×32 và 48×48 pixel), nhưng đã lỗi thời trong thời đại màn hình mật độ cao. Thay vào đó, các bạn có thể dùng ảnh PNG để thay thế. Hãy chú ý các đặc tính riêng của mỗi trình duyệt, bạn có thể đọc chi tiết tại <a href="https://css-tricks.com/favicon-quiz/">đây</a>.</p>
+					<p><b>Progress element</b></p>
+					<p>Ngay từ hệ điều hành (thẩm mĩ) đầu tiên, progress bar vẫn luôn là thành phần không thể loại bỏ. Web cũng sử dụng progress bar rất nhiều. Hiện nay, ta còn có thể sử dụng bộ điền khiển có sẵn với progress bar, với điều kiện phải để ý kỹ đến thông số của mỗi trình duyệt. Các bạn có thể xem một số hướng dẫn và tài nguyên dưới đây:</p>
+					<ol>
+						<li><a href="https://css-tricks.com/html5-progress-element/">The HTML5 progress Element (CSS-Tricks)</a></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress">The &lt;progress> element (MDN)</a></li>
+					</ol>
+					<p><b>Range input type (thanh trượt)</b></p>
+					<p>Tương tự progress element, thanh trượt cũng là một thành phần khó bỏ trong mọi hệ điều hành. Với sự giúp đỡ của nhiều giải pháp JavaScript, ta cũng không mất quá nhiều thời gian để load một trang web. Cuối cùng, các bạn giờ đây có thể tạo một bộ điều khiển trượt (native) chỉ với một HTML tag duy nhất. Một số hướng dẫn sử dụng:</p>
+					<ol>
+						<li><a href="http://www.html5tutorial.info/html5-range.php">Input Type : Range (HTML5Tutorial.info)</a></li>
+						<li><a href="http://www.hongkiat.com/blog/html5-range-slider-style/">How To Style HTML5 Range Slider Across Multiple Browsers (Hongkiat.com)</a></li>
+						<li><a href="http://thenewcode.com/757/Playing-With-The-HTML5-range-Slider-Input">Playing With The HTML5 range Slider Input (The New Code)</a></li>
+					</ol>
+					<p><b>Iframe sandbox</b></p>
+					<p>Iframes đang dần trở nên phổ biến trong những năm gần đây. Nhiều plugin mạng xã hội, banner và các advert – tất cả đều sử dụng advert để hiển thị nội dung mong muốn. Với quá nhiều cánh cửa mở trên trang web, hiển nhiên cơ hội bị xâm nhập cũng tăng theo.</p>
+					<p>Sandbox mode sẽ giúp hạn chế cơ hội này. Sandbox chỉ thị trình duyệt cắt giảm đặc quyền (như JavaScript đang chạy hoặc các popup đang kích hoạt). Cả Microsoft và Chromium đều đã hệ thống hóa tính năng này:</p>
+					<ol>
+						<li><a href="https://msdn.microsoft.com/en-us/hh563496">How to Safeguard your Site with HTML5 Sandbox (MSDN)</a></li>
+						<li><a href="http://blog.chromium.org/2010/05/security-in-depth-html5s-sandbox.html">Security in Depth: HTML5’s @sandbox (Chromium Blog)</a></li>
+					</ol>
+					<p><b>Session History Management</b></p>
+					<p>Theo hành vi quản lí cũ, khi bạn load một trang web mới, URLs thay đổi và được lưu trũ trong lịch sử trình duyệt. Từ đó, bạn có thể tìm tới tìm lui trong lịch sử khi muốn vào lại trang mà bạn vừa rời đi. Sự phổ biến ngày càng tăng của “ứng dụng một trang” mang đến một thách thức mới: tất cả mọi thứ chỉ trong một trang, thông qua AJAX calls, tuy nhiên ta vẫn cần URLs riêng biệt cho nhiều trạng trái của ứng dụng. Vấn đề này được giải quyết với những cập nhật mới nhất đến history management: event popstate, method history.pushState và history.replaceState. Các bài viết sau phân tích tính năng này chuyên sâu hơn:</p>
+					<ol>
+						<li><a href="http://www.adequatelygood.com/Saner-HTML5-History-Management.html">Saner HTML5 History Management (AdequatelyGood.com)</a></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/History_API">Manipulating the browser history (MDN)</a></li>
+					</ol>
+					<h2>Lời kết</h2>
+					<p>Với thời đại oldIE đi vào quá khứ, rất nhiều tính năng và công cụ cũ lại có cơ hội nổi lên lần nữa. Hy vọng, trong tương lại gần, tất cả trang web và ứng dụng sẽ không phải tiếp tục dính với các mô hình cũ kỹ nữa, và có thể tận dụng được khả năng tuyệt vời từ những trình duyệt mới, với tốc độ và trải nghiệm siêu việt.</p>
+					<blockquote>Bài viết được tham khảo tạo blog: sitepoint</blockquote>
+				</div>
+			</article>
+		</div>
+		<!-- Sidebar -->
+		<div id="sidebar_block"></div>
+	</div>
+	<div class="footerEnd">
+		<div id="toTop"></div>
+		<h3>May mắn lớn nhất của cuộc đời, không phải nhặt được tiền, cũng không phải trúng số, mà là có người có thể dẫn bạn đi đến 1 nền tảng cao hơn.</h3> </div>
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jquery.flatWeatherPlugin.min.js"></script>
+	<script src="../assets/js/share.js"></script>
+	<script src="../assets/js/skel.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/jquery.lazyload.min.js"></script>
+	<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="../assets/js/main.js"></script>
+	<script>
+		// Weather widget
+		function startWeather() {
+			var example = $("#weatherDanang").flatWeatherPlugin({
+				location: "Danang",
+				country: "Vietnam",
+				api: "yahoo",
+				displayCityNameOnly: false,
+				// view: "today",
+			});
+		}
+	</script>
+</body>
+
+</html>

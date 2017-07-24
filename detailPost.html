@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Future Imperfect</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<base href="http://localhost:3000/" />
+<link rel="icon" href="logo.ico" type="image/x-icon" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/flatWeatherPlugin.css" />
+	<link rel="stylesheet" href="assets/css/share.css" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif%3Aregular&subset=vietnamese&ver=4.8" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+
+<body onload="startWeather();">
+	<!-- Banner -->
+	<div id="banner_block"></div>
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<!-- Header -->
+		<div id="header_block"></div>
+		<!-- Main -->
+		<div id="main">
+			<!-- breadcrumb -->
+			<nav>
+				<ul class="breadcrumb">
+					<li><a href="">Trang chủ</a></li>
+					<li><a href="">Chuyện nghề nghiệp</a></li>
+				</ul>
+			</nav>
+			<!-- Post -->
+			<article class="post fadeTop">
+				<header>
+					<div class="title">
+						<h2><a href="#">Sắc huyền ngã nặng</a></h2>
+						<p class="timePost">Posted by KhuyenNguyen on June 27, 2017</p>
+					</div>
+				</header> <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+				<div class="description-post"> <img src="images/pic01.jpg" alt="">
+					<p>Hãy làm một cái gì đó có ích cho đời, bất cứ cái gì cũng được: viết một cái gì đó, sáng tác một bản nhạc nào đó, quay vlog nói về một vấn đề gì đó, học lập trình và lập trình ra một cái gì đó, thiết kế ra một cái gì đó, dịch một bài viết nào đó,
+						làm ra một cái gì đó, bán một cái gì đó, chia sẻ một cái gì đó (hay ho), lập ra một nhóm nào đó, tham gia một hội nào đó… Khoan nghĩ đến tiền bạc, nó chắc chắn sẽ đến sau. Tiền bạc sẽ không bao giờ đến nếu bạn nghĩ đến nó trước, đó là lý do tại
+						sao bạn cứ mãi không có tiền, vì bạn cứ nghĩ đến tiền, không có tiền thì bạn không làm.</p>
+					<p>Nhiều người vịn vào câu nói “Nếu bạn giỏi chuyện gì thì đừng làm nó miễn phí.” của nhân vật phản diện Joker trong bộ phim Người Dơi để lý lẽ, đây là một trong những câu nói thiếu sót và dễ gây hiểu lầm nhất mọi thời đại. Nó thiếu sót là ở chỗ trước
+						khi được trả tiền thì người ta phải biết bạn là ai, bạn phải có một lịch sử, một quá trình trong quá khứ, quá trình đó phần nhiều là được dựng nên từ những việc bạn làm vì đam mê, làm không công, hoặc rất ít công, mình thấy không nhiều người hiểu
+						được chuyện này</p>
+					<p>Thứ hai là trước khi bạn “giỏi” bạn phải trải qua một thời gian “chưa giỏi”, một thời gian rèn luyện, chứ không bao giờ tự nhiên đùng một cái bạn là thiên tài được, trừ khi bạn nằm trong số 0.001%, thời gian chưa giỏi này thì theo câu nói trên có
+						nghĩa là chưa được trả tiền, hoặc trả tiền theo khả năng chưa giỏi của bạn (có nghĩa là không nhiều), chưa được trả tiền thì bạn không làm sao? không rèn luyện sao?</p>
+				</div>
+			</article>
+		</div>
+		<!-- Sidebar -->
+		<section id="sidebar">
+			<!-- Intro -->
+			<section id="intro"> <a href="#" class="logo"><img src="images/logo.jpg" alt="" /></a>
+				<header>
+					<h2>Khuyen Nguyen</h2> </header>
+			</section>
+			<!-- About -->
+			<section class="blurb">
+				<h2>About me</h2>
+				<p>Hi guys!</p>
+				<p>Tôi là Khuyên, một 9x xuất thân từ con nhà xây dựng. Hiện tại tôi đang làm vị trí <span class="note">"kỹ sư mặt tiền"</span> cho một công ty đất nước mặt trời mọc.</p>
+				<p>Với sở thích khám phá và có thói quen theo dõi sự phát triển của công nghệ. Blog này tạo ra với những bài viết trải nghiệm cuộc sống, kinh nghiệm, xu hướng nghề nghiệp… từ bản thân và những bài viết sưu tầm. Quan trọng hơn tạo được sự chia sẻ và gắn kết với nhiều người xung quanh.</p>
+			</section>
+			<!-- weather -->
+			<section class="weather is_pc">
+				<p id="weatherDanang"></p>
+			</section>
+			<section class="instagramEmbed is_pc">
+				<h2>Instagram</h2>
+				<script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/a00851faffff559ab6fe9318bb09448b.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe> </section>
+			<!-- Footer -->
+			<section id="footer">
+				<h2>Follow me on</h2>
+				<ul class="icons">
+					<li><a target="_blank" href="https://www.facebook.com/khuyennguyen95" class="fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a target="_blank" href="https://www.flickr.com/photos/129833409@N08/" class="fa-flickr"><span class="label">Flickr</span></a></li>
+					<li><a target="_blank" href="https://www.instagram.com/khuyennguyen95/" class="fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="mailto:nguyenhuukhuyenudn@gmail.com" class="fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			</section>
+		</section>
+	</div>
+	<div class="footerEnd">
+		<div id="toTop"></div>
+		<h3>May mắn lớn nhất của cuộc đời, không phải nhặt được tiền, cũng không phải trúng số, mà là có người có thể dẫn bạn đi đến 1 nền tảng cao hơn.</h3> </div>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.flatWeatherPlugin.min.js"></script>
+	<script src="assets/js/share.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
+	<script>
+		// Weather widget
+		function startWeather() {
+			var example = $("#weatherDanang").flatWeatherPlugin({
+				location: "Danang",
+				country: "Vietnam",
+				api: "yahoo",
+				displayCityNameOnly: false,
+				// view: "today",
+			});
+		}
+	</script>
+</body>
+
+</html>
