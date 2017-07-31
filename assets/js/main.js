@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	$('#header_block').load('../../block/header.html');
 	$('#banner_block').load('../../block/banner.html');
 	$('#sidebar_block').load('../../block/sidebar.html');
 	setTimeout(function () {
@@ -15,11 +14,6 @@ $(document).ready(function() {
 		hljs.highlightBlock(block);
 	});
 });
-/*
-	Future Imperfect by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 (function($) {
 
